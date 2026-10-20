@@ -66,13 +66,21 @@ jobs:
         run: |
           python3 .github/scripts/sg_graph.py --style labfile --user yubinex --save-data /tmp/gh.json \
             --out-dark assets/labfile-dark.svg --out-light assets/labfile-light.svg
-          for style in title worldlines feed footer; do
+          for style in worldlines feed footer; do
             python3 .github/scripts/sg_graph.py --style "$style" --user yubinex --data /tmp/gh.json \
               --out-dark "assets/$style-dark.svg" --out-light "assets/$style-light.svg"
           done
-          # OP GIF inside the observation-monitor frame (embedded, so it animates in <img>)
+          # Hero row as ONE svg: divergence meter + glitch title (left), observation
+          # monitor with the OP GIF embedded (right). Parts are built in /tmp, then merged.
+          python3 .github/scripts/divergence.py .github/scripts/divergence-src.svg /tmp/meter.svg
+          python3 .github/scripts/sg_graph.py --style title --user yubinex --data /tmp/gh.json \
+            --out-dark /tmp/title-dark.svg --out-light /tmp/title-light.svg
           python3 .github/scripts/sg_graph.py --style monitor --gif assets/op.gif \
-            --out-dark assets/monitor-dark.svg --out-light assets/monitor-light.svg
+            --out-dark /tmp/monitor-dark.svg --out-light /tmp/monitor-light.svg
+          for v in dark light; do
+            python3 .github/scripts/sg_hero.py --meter /tmp/meter.svg --title "/tmp/title-$v.svg" \
+              --monitor "/tmp/monitor-$v.svg" --out "assets/hero-$v.svg"
+          done
 
       - name: Commit if changed
         run: |
