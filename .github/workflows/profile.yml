@@ -1,0 +1,87 @@
+name: Profile panels
+
+on:
+  schedule:
+    - cron: "29 5 * * *"
+  workflow_dispatch:
+    inputs:
+      refresh_gif:
+        description: "Download the OP GIF again even if assets/op.gif exists"
+        type: boolean
+        default: false
+  push:
+    paths:
+      - .github/workflows/profile.yml
+      - .github/scripts/**
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-panels-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  OP_GIF_URL: https://static2.klipy.com/ii/4e7bea9f7a3371424e6c16ebc93252fe/f5/c1/cRR6cCvRx1AjXxVfnbr2.gif
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      # Hosted in the repo: GitHub's image proxy (camo) refuses external
+      # images over ~5 MB, and the original GIF is ~8 MB. Same-repo files skip
+      # camo. It is re-encoded to 400px / 12.5 fps (~2 MB) so the page loads fast.
+      - name: Fetch and optimise OP GIF
+        env:
+          REFRESH: ${{ inputs.refresh_gif }}
+        run: |
+          if [ -f assets/op.gif ] && [ "$(stat -c %s assets/op.gif)" -lt 3000000 ] && [ "$REFRESH" != "true" ]; then
+            echo "assets/op.gif already optimised ($(stat -c %s assets/op.gif) bytes)"; exit 0
+          fi
+          curl -fsSL --retry 3 --max-filesize 50000000 -o /tmp/src.gif "$OP_GIF_URL"
+          magic=$(head -c 6 /tmp/src.gif)
+          echo "source magic=$magic size=$(stat -c %s /tmp/src.gif)"
+          if [ "$magic" != "GIF89a" ] && [ "$magic" != "GIF87a" ]; then
+            echo "::error::Downloaded file is not a GIF"; exit 1
+          fi
+          command -v ffmpeg >/dev/null && command -v gifsicle >/dev/null || {
+            sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg gifsicle >/dev/null; }
+          ffmpeg -v error -y -i /tmp/src.gif -vf "fps=12.5,scale=400:-1:flags=lanczos,split[a][b];[a]palettegen=max_colors=32:stats_mode=full[p];[b][p]paletteuse=dither=none:diff_mode=rectangle" /tmp/mid.gif
+          gifsicle -O3 --lossy=80 /tmp/mid.gif -o /tmp/op.gif
+          size=$(stat -c %s /tmp/op.gif)
+          echo "optimised size=$size"
+          if [ "$(head -c 6 /tmp/op.gif)" != "GIF89a" ] || [ "$size" -lt 10000 ]; then
+            echo "::error::Optimised GIF looks wrong"; exit 1
+          fi
+          mkdir -p assets
+          mv /tmp/op.gif assets/op.gif
+
+      - name: Generate panels
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SG_TZ: Europe/Berlin
+        run: |
+          python3 .github/scripts/sg_graph.py --style labfile --user yubinex --save-data /tmp/gh.json \
+            --out-dark assets/labfile-dark.svg --out-light assets/labfile-light.svg
+          for style in title stack gadgets worldlines feed footer; do
+            python3 .github/scripts/sg_graph.py --style "$style" --user yubinex --data /tmp/gh.json \
+              --out-dark "assets/$style-dark.svg" --out-light "assets/$style-light.svg"
+          done
+          # OP GIF inside the observation-monitor frame (embedded, so it animates in <img>)
+          python3 .github/scripts/sg_graph.py --style monitor --gif assets/op.gif \
+            --out-dark assets/monitor-dark.svg --out-light assets/monitor-light.svg
+
+      - name: Commit if changed
+        run: |
+          git add assets/
+          if git diff --cached --quiet; then
+            echo "No change to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update profile panels"
+          git push
