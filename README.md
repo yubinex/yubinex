@@ -1,27 +1,10 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yubinex/yubinex/raw/master/assets/monitor-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/yubinex/yubinex/raw/master/assets/monitor-light.svg" />
-  <img align="right" src="https://github.com/yubinex/yubinex/raw/master/assets/monitor-light.svg" width="424" alt="observation feed" />
-</picture>
-
-<p align="center">
-  <img src="https://github.com/yubinex/yubinex/raw/master/assets/spacer.svg" alt="" />
-</p>
-
-<p align="center">
-  <img src="https://github.com/yubinex/yubinex/raw/master/assets/divergence.svg" width="340" alt="1.048596" />
-</p>
-
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yubinex/yubinex/raw/master/assets/title-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github.com/yubinex/yubinex/raw/master/assets/title-light.svg" />
-    <img src="https://github.com/yubinex/yubinex/raw/master/assets/title-light.svg" width="390" alt="Hi, I'm yubinex" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yubinex/yubinex/raw/master/assets/hero-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/yubinex/yubinex/raw/master/assets/hero-light.svg" />
+    <img src="https://github.com/yubinex/yubinex/raw/master/assets/hero-light.svg" width="100%" alt="Divergence 1.048596 · Hi, I'm yubinex · observation feed" />
   </picture>
 </p>
-
-<br clear="both" />
-<br />
 
 <p align="center">
   <picture>
