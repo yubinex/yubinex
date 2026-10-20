@@ -19,28 +19,10 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/yubinex?tab=repositories">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yubinex/yubinex/raw/master/assets/stack-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="https://github.com/yubinex/yubinex/raw/master/assets/stack-light.svg" />
-      <img src="https://github.com/yubinex/yubinex/raw/master/assets/stack-light.svg" width="772" alt="C · Python · Bash · JavaScript · TypeScript · HTML · CSS · React" />
-    </picture>
-  </a>
-</p>
-
-<p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yubinex/yubinex/raw/master/assets/labfile-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://github.com/yubinex/yubinex/raw/master/assets/labfile-light.svg" />
     <img src="https://github.com/yubinex/yubinex/raw/master/assets/labfile-light.svg" width="880" alt="lab member file" />
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yubinex/yubinex/raw/master/assets/gadgets-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github.com/yubinex/yubinex/raw/master/assets/gadgets-light.svg" />
-    <img src="https://github.com/yubinex/yubinex/raw/master/assets/gadgets-light.svg" width="880" alt="future gadget list" />
   </picture>
 </p>
 

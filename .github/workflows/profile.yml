@@ -66,7 +66,7 @@ jobs:
         run: |
           python3 .github/scripts/sg_graph.py --style labfile --user yubinex --save-data /tmp/gh.json \
             --out-dark assets/labfile-dark.svg --out-light assets/labfile-light.svg
-          for style in title stack gadgets worldlines feed footer; do
+          for style in title worldlines feed footer; do
             python3 .github/scripts/sg_graph.py --style "$style" --user yubinex --data /tmp/gh.json \
               --out-dark "assets/$style-dark.svg" --out-light "assets/$style-light.svg"
           done
