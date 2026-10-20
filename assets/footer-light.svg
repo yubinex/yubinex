@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 40" width="600" height="40" role="img" aria-label="El Psy Kongroo.">
+<defs>
+<filter id="gl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur in="SourceGraphic" stdDeviation="0.90" result="b2"/><feGaussianBlur in="SourceGraphic" stdDeviation="0.27" result="b1"/><feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<style>.fl{animation:fl 9s infinite}@keyframes fl{0%,95%,100%{opacity:1}96%{opacity:.5}97%{opacity:1}98%{opacity:.75}}.cur{opacity:0;animation:cu 1s steps(1) 2.1s 3 forwards}@keyframes cu{0%{opacity:1}50%{opacity:0}100%{opacity:0}}.ln{stroke-dasharray:1;stroke-dashoffset:1;animation:ln .8s ease-out .2s forwards}@keyframes ln{to{stroke-dashoffset:0}}</style>
+<clipPath id="ty"><rect x="239.1" y="0" width="0" height="40"><animate attributeName="width" values="0.0;7.8;15.7;23.6;31.4;39.2;47.1;55.0;62.8;70.7;78.5;86.3;94.2;102.0;109.9;117.8" dur="1.05s" begin=".6s" fill="freeze" calcMode="discrete"/></rect></clipPath></defs>
+<path class="ln" pathLength="1" d="M223.1 17 L60 17" stroke="#e2d8ce" fill="none"/>
+<path class="ln" pathLength="1" d="M382.9 17 L540 17" stroke="#e2d8ce" fill="none"/>
+<g class="fl" clip-path="url(#ty)"><text x="241.1" y="21.5" fill="#c9600f" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" text-anchor="start" font-weight="normal" font-style="italic">El Psy Kongroo.</text></g>
+<rect class="cur" x="361.9" y="10.5" width="6" height="12" fill="#c9600f"/>
+<text x="300.0" y="36.0" fill="#8a6f58" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="8" text-anchor="middle" font-weight="normal" letter-spacing="1.5" opacity=".55">transmission end  //  world line 1.048596</text>
+</svg>
