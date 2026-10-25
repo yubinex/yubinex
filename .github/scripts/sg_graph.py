@@ -10,6 +10,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import contrib_graph  # noqa: E402
 from contrib_graph import PAL, DIGITS, glow_filter, digit_defs, number, svg_open  # noqa: E402
 import sg_data  # noqa: E402
+from raster_svg import png_data  # noqa: E402
 
 MONO = "ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace"
 EXTRA = {
@@ -117,8 +118,21 @@ def worldlines(d, theme):
     # main world line on top
     g.append(f'<path class="dr" pathLength="1" style="animation-duration:{D}s;animation-timing-function:linear;animation-delay:.6s" '
              f'd="M{x0} {y0} L{x1} {y0}" stroke="{pal["line"]}" stroke-width="1.6" fill="none"/>')
+    # Preserve the vector draw-in, then swap its settled appearance for a 2x PNG.
+    # Even isolated SVG filter groups can be rerasterized on every dot update.
+    settled = (svg_open(W, H, "Settled world lines") + '<defs>'
+               + glow_filter("gl", pal, 1.4, 3.6) + '</defs>' + "".join(g) + '</g></svg>')
+    backdrop = png_data(settled, W * 2, H * 2)
+    g.append('<set attributeName="display" to="none" begin="8s" fill="freeze"/></g>')
+    g.append(f'<image x="0" y="0" width="{W}" height="{H}" href="{backdrop}" opacity="0">'
+             '<set attributeName="opacity" to="1" begin="8s" fill="freeze"/></image>')
+    # The moving dot must not invalidate the blur of the entire branch graph.
+    g.append('<g filter="url(#gl)">')
+    # 15 updates/second retains the tracer without requesting full-rate SVG paints.
+    points = ";".join(f"{i / 75:.6f}" for i in range(76))
     g.append(f'<circle r="2.6" fill="{pal["core"]}" opacity="0"><set attributeName="opacity" to="1" begin="{0.6+D:.1f}s"/>'
-             f'<animateMotion dur="5s" begin="{0.6+D:.1f}s" repeatCount="indefinite" path="M{x0} {y0} L{x1} {y0}"/></circle>')
+             f'<animateMotion dur="5s" begin="{0.6+D:.1f}s" repeatCount="indefinite" '
+             f'calcMode="discrete" keyPoints="{points}" keyTimes="{points}" path="M{x0} {y0} L{x1} {y0}"/></circle>')
     g.append("</g>")
     o += g
     # readout: fraction of observed days with activity
@@ -148,9 +162,9 @@ def labfile(d, theme):
     peak = max(range(24), key=lambda h: d["push_hours"][h])
     fs, cw = 13, 7.85  # font size, approx monospace advance
     stamp_c = pal["red"]
-    css = [".crt{animation:crt 7s infinite}@keyframes crt{0%,96%,100%{opacity:1}97%{opacity:.86}98%{opacity:1}}",
+    css = [".crt{animation:crt 7s steps(1,end) infinite}@keyframes crt{0%,96%,100%{opacity:1}97%{opacity:.86}98%{opacity:1}}",
            ".cur{animation:bl 1s steps(1) infinite}@keyframes bl{50%{opacity:0}}",
-           ".scan{animation:sc 6s linear infinite}@keyframes sc{from{transform:translateY(-40px)}to{transform:translateY(%dpx)}}" % (H + 40),
+           ".scan{animation:sc 6s steps(72,end) infinite}@keyframes sc{from{transform:translateY(-40px)}to{transform:translateY(%dpx)}}" % (H + 40),
            ".st{opacity:0;transform-box:fill-box;transform-origin:center;animation:st .35s cubic-bezier(.2,1.6,.4,1) forwards}"
            "@keyframes st{0%{opacity:0;transform:rotate(-9deg) scale(1.6)}100%{opacity:.85;transform:rotate(-9deg) scale(1)}}",
            ".fi{opacity:0;animation:fi .4s ease-out forwards}@keyframes fi{to{opacity:1}}"]
@@ -202,7 +216,7 @@ def labfile(d, theme):
         body += g
         t += dur + (0.3 if li == 0 else 0.1)
     cx = X0 + L1 * cw + len(status) * cw + 4
-    body.append(f'<rect class="cur" x="{cx:.1f}" y="{lines[-1][0]-fs+2}" width="{cw:.1f}" height="{fs}" fill="{pal["line"]}" opacity="0">'
+    cursor = (f'<rect class="cur" x="{cx:.1f}" y="{lines[-1][0]-fs+2}" width="{cw:.1f}" height="{fs}" fill="{pal["line"]}" opacity="0">'
                 f'<set attributeName="opacity" to="1" begin="{t:.2f}s" fill="freeze"/></rect>')
     o += clips + ["</defs>"]
     o.append(f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="12" fill="{ex["panel"]}" stroke="{ex["panel_s"]}"/>')
@@ -224,6 +238,7 @@ def labfile(d, theme):
     o.append(f'<line x1="258" y1="58" x2="258" y2="{H-24}" stroke="{ex["faint"]}"/>')
     o.append(f'<line x1="{X0}" y1="{div_y}" x2="{W-24}" y2="{div_y}" stroke="{ex["faint"]}" stroke-dasharray="3 4"/>')
     o.append('<g filter="url(#gl)">' + "".join(body) + "</g>")
+    o.append('<g filter="url(#gl)">' + cursor + "</g>")
     o.append(text(W - 24, H - 12, f"sync {d['generated']}", ex["faint"] if theme == "dark" else ex["dimtext"], 9, "end"))
     o.append("</g>")
     # ---- classification stamp
@@ -666,8 +681,8 @@ def monitor(d, theme):
     amber = pal["line"] if theme == "dark" else "#ffb35c"
     red = "#ff4d3a"
     css = [".rec{animation:rec 1.2s steps(1) infinite}@keyframes rec{50%{opacity:.15}}",
-           ".rl{animation:rl 7s linear infinite}@keyframes rl{from{transform:translateY(-60px)}to{transform:translateY(%dpx)}}" % (SH + 60),
-           ".fk{opacity:0;animation:fk 6s infinite}@keyframes fk{0%,93%,100%{opacity:0}94%{opacity:.08}95%{opacity:0}96.5%{opacity:.05}}"]
+           ".rl{animation:rl 7s steps(84,end) infinite}@keyframes rl{from{transform:translateY(-60px)}to{transform:translateY(%dpx)}}" % (SH + 60),
+           ".fk{opacity:0;animation:fk 6s steps(1,end) infinite}@keyframes fk{0%,93%,100%{opacity:0}94%{opacity:.08}95%{opacity:0}96.5%{opacity:.05}}"]
     b64 = base64.b64encode(raw).decode()
     o = [svg_open(W, H, "Observation feed"), "<defs>",
          f'<clipPath id="scr"><rect x="{sx}" y="{sy}" width="{SW}" height="{SH}" rx="10"/></clipPath>',
