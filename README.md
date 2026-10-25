@@ -10,9 +10,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/labfile-dark.svg?v=19cf15ec553b1924" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/labfile-light.svg?v=f3db2f4104aa4241" />
-    <img src="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/labfile-light.svg?v=f3db2f4104aa4241" width="880" alt="lab member file" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/labfile-dark.svg?v=852952c7f3949e29" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/labfile-light.svg?v=4ff4d61f68e04e15" />
+    <img src="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/labfile-light.svg?v=4ff4d61f68e04e15" width="880" alt="lab member file" />
   </picture>
 </p>
 
