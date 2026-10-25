@@ -8,17 +8,17 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yubinex/yubinex/raw/master/assets/labfile-dark.svg?v=0c867be327ce984c" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github.com/yubinex/yubinex/raw/master/assets/labfile-light.svg?v=ec0b1af2c86c8288" />
-    <img src="https://github.com/yubinex/yubinex/raw/master/assets/labfile-light.svg?v=ec0b1af2c86c8288" width="880" alt="lab member file" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yubinex/yubinex/raw/master/assets/labfile-dark.svg?v=832c442543126f5f" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/yubinex/yubinex/raw/master/assets/labfile-light.svg?v=517dc1337e4720b9" />
+    <img src="https://github.com/yubinex/yubinex/raw/master/assets/labfile-light.svg?v=517dc1337e4720b9" width="880" alt="lab member file" />
   </picture>
 </p>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yubinex/yubinex/raw/master/assets/worldlines-dark.svg?v=ee3ca90364ad8c99" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github.com/yubinex/yubinex/raw/master/assets/worldlines-light.svg?v=319c66854219bc0e" />
-    <img src="https://github.com/yubinex/yubinex/raw/master/assets/worldlines-light.svg?v=319c66854219bc0e" width="880" alt="contribution world lines" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yubinex/yubinex/raw/master/assets/worldlines-dark.svg?v=20e0d755a79f3d55" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/yubinex/yubinex/raw/master/assets/worldlines-light.svg?v=5a61fd0ab97ee210" />
+    <img src="https://github.com/yubinex/yubinex/raw/master/assets/worldlines-light.svg?v=5a61fd0ab97ee210" width="880" alt="contribution world lines" />
   </picture>
 </p>
 
