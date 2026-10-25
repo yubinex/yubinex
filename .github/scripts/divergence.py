@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Animated nixie divergence meter (CSS only). Reuses glyph paths from the static meter."""
 import random, re, sys
+from nixie_tiles import image_defs
 
 src = open(sys.argv[1]).read()
 out_path = sys.argv[2]
@@ -42,7 +43,7 @@ css = [
     ".core{fill:none;stroke:#ffe2bf;stroke-width:22.31;opacity:.85}",
     ".dg{opacity:0}",
     # warm cathode glow breathing; shifts dim the whole display briefly
-    "@keyframes br{0%,100%{opacity:.75}50%{opacity:1}}.wm{animation:br 3.2s ease-in-out infinite}",
+    "@keyframes br{0%,100%{opacity:.75}50%{opacity:1}}.wm{animation:br 3.2s steps(4,end) infinite}",
 ]
 # global flicker during world-line shifts
 fk = []
@@ -52,7 +53,7 @@ for a in (7.8, 9.5, 19.8, 21.5):
 css.append("@keyframes sh{0%,100%{opacity:1}" + "".join(fk) + f"}}.sh{{animation:sh {P}s steps(1,end) infinite}}")
 
 o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 404 112" width="404" height="112" role="img" aria-label="Divergence 1.048596">',
-     head_defs, defs_glyphs, "<style>@@CSS@@</style>",
+     head_defs, defs_glyphs, image_defs(), "<style>@@CSS@@</style>",
      '<rect x="0.5" y="0.5" width="403" height="111" rx="12" fill="#0b0a09" stroke="#2a2522"/>']
 kid = 0
 for i, tx in enumerate(TUBES):
@@ -62,12 +63,15 @@ for i, tx in enumerate(TUBES):
     # stacked cathodes, like a real nixie
     for d in (1, 7, 4, 3, 0, 6, 9, 2, 5, 8):
         o.append(f'<use href="#d{d}" class="gh" transform="translate({tx+off[d]:.2f} 81) {S}"/>')
-    o.append(f'<rect class="wm" style="animation-delay:-{rnd.uniform(0,3):.2f}s" x="{tx}" y="14" width="46" height="84" rx="14" fill="url(#warm)"/>')
+    # Quantize phases to the same .4s clock: keep varied breathing without seven
+    # independent, continuously interpolated gradients repainting the hero.
+    phase = round(rnd.uniform(0, 3) / .4) * .4
+    o.append(f'<rect class="wm" style="animation-delay:-{phase:.2f}s" x="{tx}" y="14" width="46" height="84" rx="14" fill="url(#warm)"/>')
     # small per-tube cathode flicker
     fa = rnd.uniform(3, 7)
     css.append(f"@keyframes f{i}{{0%,{fa:.1f}%,{fa+0.6:.1f}%,100%{{opacity:1}}{fa+0.2:.1f}%{{opacity:.6}}{fa+0.4:.1f}%{{opacity:.9}}}}"
-               f".f{i}{{animation:f{i} {rnd.uniform(5,9):.1f}s infinite}}")
-    o.append(f'<g class="sh"><g class="f{i}" filter="url(#glow)">')
+               f".f{i}{{animation:f{i} {rnd.uniform(5,9):.1f}s steps(1,end) infinite}}")
+    o.append(f'<g class="sh"><g class="f{i}"><g>')
     by_d = {}
     for a, b, d in tl[i]:
         if b > a:
@@ -90,13 +94,12 @@ for i, tx in enumerate(TUBES):
             kf[0] = "0%{opacity:1}"
         k = f"k{kid}"; kid += 1
         css.append(f"@keyframes {k}{{{''.join(kf[0:1] + [x for x in kf[1:] if not x.startswith('0%')])}}}.{k}{{animation:{k} {P}s steps(1,end) infinite}}")
-        t = f"translate({tx+off[d]:.2f} 81) {S}"
-        o.append(f'<g class="dg {k}"><use href="#d{d}" class="lit" transform="{t}"/><use href="#d{d}" class="core" transform="{t}"/></g>')
-    o.append("</g></g>")
+        o.append(f'<g class="dg {k}"><use href="#tile{d}" transform="translate({tx} 0)"/></g>')
+    o.append("</g></g></g>")
     o.append(f'<rect x="{tx+4}" y="18" width="5.5" height="76" rx="2" fill="#ffffff" opacity=".05"/>')
     o.append("</g>")
     if i == 0:
-        o.append('<g class="sh" filter="url(#glow)"><circle cx="67.00" cy="78.50" r="2.8" fill="#ff9d4d"/><circle cx="67.00" cy="78.50" r="1.2" fill="#ffe2bf"/></g>')
+        o.append('<g class="sh"><g filter="url(#glow)"><circle cx="67.00" cy="78.50" r="2.8" fill="#ff9d4d"/><circle cx="67.00" cy="78.50" r="1.2" fill="#ffe2bf"/></g></g>')
 o.append("</svg>")
 svg = "\n".join(o).replace("@@CSS@@", "".join(css))
 open(out_path, "w").write(svg)

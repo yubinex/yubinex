@@ -59,6 +59,13 @@ jobs:
           mkdir -p assets
           mv /tmp/op.gif assets/op.gif
 
+      - name: Install build-time SVG renderer
+        run: |
+          command -v rsvg-convert >/dev/null || {
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq librsvg2-bin
+          }
+
       - name: Generate panels
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -84,6 +91,9 @@ jobs:
 
       - name: Version README panel URLs
         run: python3 .github/scripts/version_panels.py
+
+      - name: Check profile regressions
+        run: python3 -m unittest discover -s .github/scripts -p 'test_*.py'
 
       - name: Commit if changed
         run: |
