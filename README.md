@@ -1,9 +1,11 @@
 <p align="center">
+  <a href="https://yubinex.github.io/yubinex-web/" aria-label="Enter the lab — yubinex’s personal website">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/hero-dark.svg?v=03185ddb37d9997e" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/hero-light.svg?v=a0acc52fa63f61c4" />
-    <img src="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/hero-light.svg?v=a0acc52fa63f61c4" width="100%" alt="Divergence 1.048596 · Hi, I'm yubinex · observation feed" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/hero-dark.svg?v=d7c9375f5e0cf657" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/hero-light.svg?v=415e7af18ce04a24" />
+    <img src="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/hero-light.svg?v=415e7af18ce04a24" width="100%" alt="Enter the lab — yubinex’s personal website · Divergence 1.048596 · observation feed" />
   </picture>
+  </a>
 </p>
 
 <p align="center">

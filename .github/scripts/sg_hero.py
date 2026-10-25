@@ -57,6 +57,7 @@ def main():
     ap.add_argument("--title", required=True)
     ap.add_argument("--monitor", required=True)
     ap.add_argument("--out", required=True)
+    ap.add_argument("--theme", choices=("dark", "light"), default="dark")
     a = ap.parse_args()
     meter, title, mon = (open(f).read() for f in (a.meter, a.title, a.monitor))
     # right column: monitor at native size, vertically centred
@@ -72,9 +73,14 @@ def main():
     top = (H - (mh + gap + th)) / 2
     left_m, _ = place(meter, "dv-", (col - mw) / 2, top, mw)
     left_t, _ = place(title, "ti-", (col - tw) / 2, top + mh + gap, tw)
+    # Use the existing whitespace below the greeting; keep all panel geometry unchanged.
+    cue_color = "#c18b52" if a.theme == "dark" else "#89501e"
+    cue = (f'<text x="{col / 2:g}" y="{top + mh + gap + th + 16:.2f}" '
+           f'text-anchor="middle" font-family="ui-monospace,Menlo,Consolas,monospace" '
+           f'font-size="10" letter-spacing="1.6" fill="{cue_color}">ENTER THE LAB ↗</text>')
     out = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" '
-           f'role="img" aria-label="Divergence 1.048596. Hi, I\'m yubinex. Observation feed.">\n'
-           f"{left_m}\n{left_t}\n{right}\n</svg>\n")
+           f'role="img" aria-label="Divergence 1.048596. Hi, I\'m yubinex. Enter the lab. Observation feed.">\n'
+           f"{left_m}\n{left_t}\n{cue}\n{right}\n</svg>\n")
     open(a.out, "w").write(out)
     print(f"wrote {a.out} ({len(out) // 1024} KB)")
 

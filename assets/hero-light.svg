@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" width="880" height="300" role="img" aria-label="Divergence 1.048596. Hi, I'm yubinex. Observation feed.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" width="880" height="300" role="img" aria-label="Divergence 1.048596. Hi, I'm yubinex. Enter the lab. Observation feed.">
 <svg x="29" y="63.3934" width="380" height="105.35" viewBox="0 0 404 112" overflow="visible">
 <defs>
 <linearGradient id="dv-glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d1a17"/><stop offset="1" stop-color="#0e0d0c"/></linearGradient>
@@ -256,6 +256,7 @@
 <use href="#ti-tr" class="ti-k4" filter="url(#ti-cy)"/>
 <rect class="ti-sc" x="40" y="13.5" width="520" height="1.2" fill="#d9731a"/>
 </svg>
+<text x="219" y="252.61" text-anchor="middle" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="10" letter-spacing="1.6" fill="#89501e">ENTER THE LAB ↗</text>
 <svg x="454" y="2" width="424" height="296.00" viewBox="0 0 424 296" overflow="visible">
 <defs>
 <clipPath id="mo-scr"><rect x="12" y="36" width="400" height="224" rx="10"/></clipPath>

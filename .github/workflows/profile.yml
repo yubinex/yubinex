@@ -79,7 +79,7 @@ jobs:
             --out-dark /tmp/monitor-dark.svg --out-light /tmp/monitor-light.svg
           for v in dark light; do
             python3 .github/scripts/sg_hero.py --meter /tmp/meter.svg --title "/tmp/title-$v.svg" \
-              --monitor "/tmp/monitor-$v.svg" --out "assets/hero-$v.svg"
+              --monitor "/tmp/monitor-$v.svg" --theme "$v" --out "assets/hero-$v.svg"
           done
 
       - name: Version README panel URLs
