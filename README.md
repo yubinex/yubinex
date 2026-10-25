@@ -10,17 +10,17 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/labfile-dark.svg?v=b540e1bc5ba2d336" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/labfile-light.svg?v=a5669160f8d36605" />
-    <img src="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/labfile-light.svg?v=a5669160f8d36605" width="880" alt="lab member file" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/labfile-dark.svg?v=19cf15ec553b1924" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/labfile-light.svg?v=f3db2f4104aa4241" />
+    <img src="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/labfile-light.svg?v=f3db2f4104aa4241" width="880" alt="lab member file" />
   </picture>
 </p>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/worldlines-dark.svg?v=4b4091542d158c36" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/worldlines-light.svg?v=d4056bdc5a97c48c" />
-    <img src="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/worldlines-light.svg?v=d4056bdc5a97c48c" width="880" alt="contribution world lines" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/worldlines-dark.svg?v=de5360d61a100bd3" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/worldlines-light.svg?v=3ba68ce1f8de5b17" />
+    <img src="https://raw.githubusercontent.com/yubinex/yubinex/master/assets/worldlines-light.svg?v=3ba68ce1f8de5b17" width="880" alt="contribution world lines" />
   </picture>
 </p>
 
