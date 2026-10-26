@@ -1,6 +1,4 @@
 """Regression checks: python3 -m unittest discover -s .github/scripts -p 'test_*.py'."""
-import hashlib
-import os
 from pathlib import Path
 import re
 import subprocess
@@ -84,15 +82,12 @@ class ProfileTests(unittest.TestCase):
             self.assertEqual(motion.get("calcMode"), "discrete")
             self.assertEqual(len(motion.get("keyTimes").split(";")), 76)
 
-    def test_readme_cache_keys_match_branch_assets(self):
+    def test_readme_artwork_uses_branch_relative_paths(self):
         text = (ROOT / "README.md").read_text()
-        ref = os.environ.get("GITHUB_REF_NAME") or subprocess.check_output(
-            ["git", "branch", "--show-current"], cwd=ROOT, text=True
-        ).strip() or "master"
-        matches = re.findall(r'/' + re.escape(ref) + r'/assets/([\w-]+\.svg)\?v=([a-f0-9]{16})', text)
-        self.assertEqual(len(matches), 15)
-        for name, version in matches:
-            self.assertEqual(hashlib.sha256((ROOT / "assets" / name).read_bytes()).hexdigest()[:16], version)
+        matches = re.findall(r'(?:src|srcset)="(\./assets/[\w-]+\.svg)"', text)
+        self.assertEqual(len(matches), 12)
+        for name in matches:
+            self.assertTrue((ROOT / name).is_file())
 
 
 if __name__ == "__main__":

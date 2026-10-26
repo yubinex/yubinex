@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="1650" viewBox="0 0 880 1650" role="img" aria-labelledby="title desc">
+<title id="title">Future Gadget Laboratory / yubinex personnel dossier</title>
+<desc id="desc">One static lab file: member information, real weekly GitHub contributions drawn as world-line branches, public experiments and a language and tools inventory. A text version follows in the README.</desc>
+<rect width="880" height="1650" rx="8" fill="#101312"/>
+<rect x="10" y="10" width="860" height="1630" rx="4" fill="none" stroke="#3c4437"/>
+<path d="M22 34V22H34" fill="none" stroke="#ffb35c" stroke-width="1" />
+<path d="M22 1616V1628H34" fill="none" stroke="#ffb35c" stroke-width="1" />
+<path d="M858 34V22H846" fill="none" stroke="#ffb35c" stroke-width="1" />
+<path d="M858 1616V1628H846" fill="none" stroke="#ffb35c" stroke-width="1" />
+<text x="36" y="48" fill="#ffb35c" font-family="monospace" font-size="18" letter-spacing="2">FUTURE GADGET LABORATORY</text>
+<text x="844" y="47" fill="#b5b6a3" font-family="monospace" font-size="14" text-anchor="end">FILE / YBX-001</text>
+<path d="M36 66H844" fill="none" stroke="#3c4437" stroke-width="1" />
+<text x="36" y="99" fill="#b5b6a3" font-family="monospace" font-size="15" letter-spacing="3">PERSONNEL DOSSIER</text>
+<text x="36" y="159" fill="#ece6d5" font-family="monospace" font-size="58" font-weight="700">yubinex</text>
+<text x="38" y="196" fill="#ece6d5" font-family="monospace" font-size="19" >Hi. Welcome to the lab.</text>
+<text x="38" y="230" fill="#ffb35c" font-family="monospace" font-size="15" >STATUS / observing</text>
+<text x="38" y="258" fill="#b5b6a3" font-family="monospace" font-size="15" >WORLD LINE / stable</text>
+<rect x="464" y="88" width="380" height="182" fill="#191d19" rx="6" stroke="#3c4437"/>
+<text x="484" y="116" fill="#b5b6a3" font-family="monospace" font-size="14" letter-spacing="1">DIVERGENCE METER</text>
+<rect x="484" y="131" width="42" height="88" fill="#101312" rx="17" stroke="#3c4437"/>
+<text x="505" y="189" fill="#ffb35c" font-family="monospace" font-size="43" text-anchor="middle" stroke-width="3" stroke="#ffb35c" opacity=".12">1</text>
+<text x="505" y="189" fill="#ffb35c" font-family="monospace" font-size="43" text-anchor="middle">1</text>
+<path d="M495 207H515" fill="none" stroke="#b5b6a3" stroke-width="1" />
+<rect x="533" y="131" width="42" height="88" fill="#101312" rx="17" stroke="#3c4437"/>
+<text x="554" y="189" fill="#ffb35c" font-family="monospace" font-size="43" text-anchor="middle" stroke-width="3" stroke="#ffb35c" opacity=".12">0</text>
+<text x="554" y="189" fill="#ffb35c" font-family="monospace" font-size="43" text-anchor="middle">0</text>
+<path d="M544 207H564" fill="none" stroke="#b5b6a3" stroke-width="1" />
+<rect x="582" y="131" width="42" height="88" fill="#101312" rx="17" stroke="#3c4437"/>
+<text x="603" y="189" fill="#ffb35c" font-family="monospace" font-size="43" text-anchor="middle" stroke-width="3" stroke="#ffb35c" opacity=".12">4</text>
+<text x="603" y="189" fill="#ffb35c" font-family="monospace" font-size="43" text-anchor="middle">4</text>
+<path d="M593 207H613" fill="none" stroke="#b5b6a3" stroke-width="1" />
+<rect x="631" y="131" width="42" height="88" fill="#101312" rx="17" stroke="#3c4437"/>
+<text x="652" y="189" fill="#ffb35c" font-family="monospace" font-size="43" text-anchor="middle" stroke-width="3" stroke="#ffb35c" opacity=".12">8</text>
+<text x="652" y="189" fill="#ffb35c" font-family="monospace" font-size="43" text-anchor="middle">8</text>
+<path d="M642 207H662" fill="none" stroke="#b5b6a3" stroke-width="1" />
+<rect x="680" y="131" width="42" height="88" fill="#101312" rx="17" stroke="#3c4437"/>
+<text x="701" y="189" fill="#ffb35c" font-family="monospace" font-size="43" text-anchor="middle" stroke-width="3" stroke="#ffb35c" opacity=".12">5</text>
+<text x="701" y="189" fill="#ffb35c" font-family="monospace" font-size="43" text-anchor="middle">5</text>
+<path d="M691 207H711" fill="none" stroke="#b5b6a3" stroke-width="1" />
+<rect x="729" y="131" width="42" height="88" fill="#101312" rx="17" stroke="#3c4437"/>
+<text x="750" y="189" fill="#ffb35c" font-family="monospace" font-size="43" text-anchor="middle" stroke-width="3" stroke="#ffb35c" opacity=".12">9</text>
+<text x="750" y="189" fill="#ffb35c" font-family="monospace" font-size="43" text-anchor="middle">9</text>
+<path d="M740 207H760" fill="none" stroke="#b5b6a3" stroke-width="1" />
+<rect x="778" y="131" width="42" height="88" fill="#101312" rx="17" stroke="#3c4437"/>
+<text x="799" y="189" fill="#ffb35c" font-family="monospace" font-size="43" text-anchor="middle" stroke-width="3" stroke="#ffb35c" opacity=".12">6</text>
+<text x="799" y="189" fill="#ffb35c" font-family="monospace" font-size="43" text-anchor="middle">6</text>
+<path d="M789 207H809" fill="none" stroke="#b5b6a3" stroke-width="1" />
+<circle cx="529" cy="198" r="2" fill="#ffb35c"/>
+<text x="484" y="248" fill="#ffb35c" font-family="monospace" font-size="14" >1.048596 / STEINS GATE</text>
+<path d="M36 292H844" fill="none" stroke="#3c4437" stroke-width="1" />
+<text x="36" y="318" fill="#b5b6a3" font-family="monospace" font-size="16" >$ ./labmem --observe yubinex</text>
+<text x="844" y="318" fill="#ffb35c" font-family="monospace" font-size="14" text-anchor="end">ACCESS GRANTED</text>
+<rect x="36" y="345" width="34" height="30" fill="#ffb35c" />
+<text x="53" y="366" fill="#101312" font-family="monospace" font-size="16" text-anchor="middle" font-weight="700">01</text>
+<text x="84" y="368" fill="#ffb35c" font-family="monospace" font-size="18" letter-spacing="1">LAB MEMBER FILE</text>
+<path d="M36 386H844" fill="none" stroke="#3c4437" stroke-width="1" />
+<text x="36" y="414" fill="#b5b6a3" font-family="monospace" font-size="15" >Public signals. One observer behind the experiments.</text>
+<text x="36" y="466" fill="#ece6d5" font-family="monospace" font-size="36" >21</text>
+<text x="36" y="494" fill="#b5b6a3" font-family="monospace" font-size="14" >PUBLIC REPOS</text>
+<text x="246" y="466" fill="#ece6d5" font-family="monospace" font-size="36" >14</text>
+<text x="246" y="494" fill="#b5b6a3" font-family="monospace" font-size="14" >REPO STARS</text>
+<text x="456" y="466" fill="#ece6d5" font-family="monospace" font-size="36" >9</text>
+<text x="456" y="494" fill="#b5b6a3" font-family="monospace" font-size="14" >FOLLOWERS</text>
+<text x="666" y="466" fill="#ece6d5" font-family="monospace" font-size="36" >527</text>
+<text x="666" y="494" fill="#b5b6a3" font-family="monospace" font-size="14" >CONTRIBUTIONS</text>
+<text x="36" y="534" fill="#ece6d5" font-family="monospace" font-size="16" >MEMBER SINCE / 2022 / 04</text>
+<text x="456" y="534" fill="#ece6d5" font-family="monospace" font-size="16" >STREAK / 11d best · 1d now</text>
+<rect x="36" y="571" width="34" height="30" fill="#ffb35c" />
+<text x="53" y="592" fill="#101312" font-family="monospace" font-size="16" text-anchor="middle" font-weight="700">02</text>
+<text x="84" y="594" fill="#ffb35c" font-family="monospace" font-size="18" letter-spacing="1">WORLD LINE OBSERVATION</text>
+<path d="M36 612H844" fill="none" stroke="#3c4437" stroke-width="1" />
+<text x="36" y="640" fill="#b5b6a3" font-family="monospace" font-size="15" >Your contribution history / weekly branches, monthly convergence</text>
+<g id="worldline-map" stroke-linecap="round" stroke-linejoin="round">
+<defs><linearGradient id="field-wash" x1="0" y1="1" x2="0" y2="0"><stop stop-color="#ffb35c" stop-opacity=".08"/><stop offset="1" stop-color="#ffb35c" stop-opacity="0"/></linearGradient></defs>
+<rect x="36" y="660" width="808" height="220" fill="#101312" rx="5" stroke="#3c4437"/>
+<rect x="37" y="661" width="806" height="218" fill="url(#field-wash)" rx="4"/>
+<text x="58" y="688" fill="#b5b6a3" font-family="monospace" font-size="13" letter-spacing="1">CONTRIBUTIONS / WEEK</text>
+<text x="822" y="688" fill="#b5b6a3" font-family="monospace" font-size="13" text-anchor="end">OCT 2025 — OCT 2026</text>
+<path d="M84 833.0H822" fill="none" stroke="#3c4437" stroke-width="0.8" stroke-dasharray="2 6"/>
+<text x="72" y="837.0" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="end">0</text>
+<path d="M84 778.0H822" fill="none" stroke="#3c4437" stroke-width="0.8" stroke-dasharray="2 6"/>
+<text x="72" y="782.0" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="end">40</text>
+<path d="M84 723.0H822" fill="none" stroke="#3c4437" stroke-width="0.8" stroke-dasharray="2 6"/>
+<text x="72" y="727.0" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="end">80</text>
+<path d="M92 833H822" fill="none" stroke="#b5b6a3" stroke-width="0.8" opacity=".45"/>
+<path d="M312.38 833C312.38 829.29 291.72 826.81 291.72 824.75 M312.38 833C312.38 830.52 305.49 828.88 305.49 827.50 M312.38 833C312.38 829.91 333.04 827.84 333.04 826.12 M374.36 833C374.36 829.91 346.81 827.84 346.81 826.12 M374.36 833C374.36 830.52 360.58 828.88 360.58 827.50 M436.34 833C436.34 789.69 443.23 760.81 443.23 736.75 M436.34 833C436.34 790.92 457.00 762.88 457.00 739.50 M498.32 833C498.32 830.52 470.77 828.88 470.77 827.50 M498.32 833C498.32 820.62 484.55 812.38 484.55 805.50 M498.32 833C498.32 815.06 498.32 803.09 498.32 793.12 M498.32 833C498.32 825.58 512.09 820.62 512.09 816.50 M498.32 833C498.32 832.38 525.87 831.97 525.87 831.62 M560.30 833C560.30 831.14 539.64 829.91 539.64 828.88 M560.30 833C560.30 829.29 553.42 826.81 553.42 824.75 M560.30 833C560.30 825.58 567.19 820.62 567.19 816.50 M560.30 833C560.30 831.76 580.96 830.94 580.96 830.25 M615.40 833C615.40 832.38 594.74 831.97 594.74 831.62 M615.40 833C615.40 825.58 608.51 820.62 608.51 816.50 M615.40 833C615.40 825.58 622.28 820.62 622.28 816.50 M615.40 833C615.40 830.52 636.06 828.88 636.06 827.50 M677.38 833C677.38 808.25 704.92 791.75 704.92 778.00 M739.36 833C739.36 822.48 718.70 815.47 718.70 809.62 M739.36 833C739.36 820.62 732.47 812.38 732.47 805.50 M739.36 833C739.36 810.11 746.25 794.84 746.25 782.12 M739.36 833C739.36 806.39 760.02 788.66 760.02 773.88 M794.45 833C794.45 809.49 773.79 793.81 773.79 780.75 M794.45 833C794.45 829.29 787.57 826.81 787.57 824.75 M794.45 833C794.45 814.44 801.34 802.06 801.34 791.75 M794.45 833C794.45 823.10 815.11 816.50 815.11 811.00" fill="none" stroke="#ffb35c" stroke-width="1.1" id="worldline-branches" opacity=".65"/>
+<circle cx="98.89" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<circle cx="140.21" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="140.20754716981133" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">NOV</text>
+<circle cx="202.19" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="202.18867924528303" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">DEC</text>
+<circle cx="257.28" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="257.2830188679245" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">JAN</text>
+<circle cx="312.38" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="312.37735849056605" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">FEB</text>
+<circle cx="374.36" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="374.35849056603774" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">MAR</text>
+<circle cx="436.34" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="436.33962264150944" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">APR</text>
+<circle cx="498.32" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="498.3207547169812" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">MAY</text>
+<circle cx="560.30" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="560.3018867924528" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">JUN</text>
+<circle cx="615.40" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="615.3962264150944" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">JUL</text>
+<circle cx="677.38" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="677.377358490566" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">AUG</text>
+<circle cx="739.36" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="739.3584905660377" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">SEP</text>
+<circle cx="794.45" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="794.4528301886793" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">OCT</text>
+<path d="M293.52 824.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M307.29 827.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M334.84 826.12a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M348.61 826.12a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M362.38 827.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M445.03 736.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M458.80 739.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M472.57 827.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M486.35 805.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M500.12 793.12a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M513.89 816.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M527.67 831.62a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M541.44 828.88a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M555.22 824.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M568.99 816.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M582.76 830.25a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M596.54 831.62a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M610.31 816.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M624.08 816.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M637.86 827.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M706.72 778.00a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M720.50 809.62a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M734.27 805.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M748.05 782.12a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M761.82 773.88a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M775.59 780.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M789.37 824.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M803.14 791.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M816.91 811.00a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0" fill="none" stroke="#ffb35c" stroke-width="0.8" id="weekly-endpoints"/>
+<path d="M436.34 833C436.34 789.69 443.23 760.81 443.23 736.75" fill="none" stroke="#ffb35c" stroke-width="7" opacity=".06"/>
+<path d="M436.34 833C436.34 789.69 443.23 760.81 443.23 736.75" fill="none" stroke="#ffb35c" stroke-width="1.9" id="peak-week"/>
+<circle cx="443.23" cy="736.75" r="4" fill="#101312" stroke="#ffb35c" stroke-width="1.2"/>
+<text x="453.22641509433964" y="728.75" fill="#ffb35c" font-family="monospace" font-size="12" >70</text>
+</g>
+<text x="36" y="911" fill="#ece6d5" font-family="monospace" font-size="17" >ACTIVITY / 527 contributions · 81 active days</text>
+<text x="36" y="939" fill="#b5b6a3" font-family="monospace" font-size="15" >Each branch = one week · height = contributions · peak 70/week</text>
+<g transform="translate(0 80)">
+<rect x="36" y="886" width="34" height="30" fill="#ffb35c" />
+<text x="53" y="907" fill="#101312" font-family="monospace" font-size="16" text-anchor="middle" font-weight="700">03</text>
+<text x="84" y="909" fill="#ffb35c" font-family="monospace" font-size="18" letter-spacing="1">CURRENT EXPERIMENTS</text>
+<path d="M36 927H844" fill="none" stroke="#3c4437" stroke-width="1" />
+<text x="36" y="955" fill="#b5b6a3" font-family="monospace" font-size="15" >Most recently pushed public projects. Lab notebooks, not finished answers.</text>
+<text x="36" y="998" fill="#ece6d5" font-family="monospace" font-size="20" font-weight="700">yubinex-web</text>
+<text x="844" y="998" fill="#ffb35c" font-family="monospace" font-size="14" text-anchor="end">JavaScript</text>
+<text x="36" y="1025" fill="#b5b6a3" font-family="monospace" font-size="16" >My personal website, reimagined as a laboratory archive. Profile, projects,</text>
+<text x="36" y="1046" fill="#b5b6a3" font-family="monospace" font-size="16" >and interests—one lab file at a time.</text>
+<text x="36" y="1086" fill="#ece6d5" font-family="monospace" font-size="20" font-weight="700">windows-wec</text>
+<text x="844" y="1086" fill="#ffb35c" font-family="monospace" font-size="14" text-anchor="end">Python</text>
+<text x="36" y="1113" fill="#b5b6a3" font-family="monospace" font-size="16" >FIA World Endurance Championship race countdown and weekend schedule tray app</text>
+<text x="36" y="1134" fill="#b5b6a3" font-family="monospace" font-size="16" >for Windows.</text>
+<text x="36" y="1174" fill="#ece6d5" font-family="monospace" font-size="20" font-weight="700">omarchy-wec</text>
+<text x="844" y="1174" fill="#ffb35c" font-family="monospace" font-size="14" text-anchor="end">QML</text>
+<text x="36" y="1201" fill="#b5b6a3" font-family="monospace" font-size="16" >FIA World Endurance Championship race countdown and weekend schedule plugin</text>
+<text x="36" y="1222" fill="#b5b6a3" font-family="monospace" font-size="16" >for Omarchy.</text>
+<rect x="36" y="1277" width="34" height="30" fill="#ffb35c" />
+<text x="53" y="1298" fill="#101312" font-family="monospace" font-size="16" text-anchor="middle" font-weight="700">04</text>
+<text x="84" y="1300" fill="#ffb35c" font-family="monospace" font-size="18" letter-spacing="1">LAB EQUIPMENT</text>
+<path d="M36 1318H844" fill="none" stroke="#3c4437" stroke-width="1" />
+<text x="36" y="1346" fill="#b5b6a3" font-family="monospace" font-size="15" >Language inventory / primary language of public, non-fork repositories</text>
+<text x="36" y="1380" fill="#ffb35c" font-family="monospace" font-size="17" >&gt;</text>
+<text x="60" y="1380" fill="#ece6d5" font-family="monospace" font-size="17" >C</text>
+<text x="416" y="1380" fill="#b5b6a3" font-family="monospace" font-size="14" text-anchor="end">5 repos</text>
+<text x="456" y="1380" fill="#ffb35c" font-family="monospace" font-size="17" >&gt;</text>
+<text x="480" y="1380" fill="#ece6d5" font-family="monospace" font-size="17" >Python</text>
+<text x="836" y="1380" fill="#b5b6a3" font-family="monospace" font-size="14" text-anchor="end">5 repos</text>
+<text x="36" y="1410" fill="#ffb35c" font-family="monospace" font-size="17" >&gt;</text>
+<text x="60" y="1410" fill="#ece6d5" font-family="monospace" font-size="17" >QML</text>
+<text x="416" y="1410" fill="#b5b6a3" font-family="monospace" font-size="14" text-anchor="end">4 repos</text>
+<text x="456" y="1410" fill="#ffb35c" font-family="monospace" font-size="17" >&gt;</text>
+<text x="480" y="1410" fill="#ece6d5" font-family="monospace" font-size="17" >HTML</text>
+<text x="836" y="1410" fill="#b5b6a3" font-family="monospace" font-size="14" text-anchor="end">2 repos</text>
+<text x="36" y="1440" fill="#ffb35c" font-family="monospace" font-size="17" >&gt;</text>
+<text x="60" y="1440" fill="#ece6d5" font-family="monospace" font-size="17" >Jupyter Notebook</text>
+<text x="416" y="1440" fill="#b5b6a3" font-family="monospace" font-size="14" text-anchor="end">2 repos</text>
+<text x="456" y="1440" fill="#ffb35c" font-family="monospace" font-size="17" >&gt;</text>
+<text x="480" y="1440" fill="#ece6d5" font-family="monospace" font-size="17" >JavaScript</text>
+<text x="836" y="1440" fill="#b5b6a3" font-family="monospace" font-size="14" text-anchor="end">1 repo</text>
+<text x="36" y="1480" fill="#ffb35c" font-family="monospace" font-size="15" >TOOLS /</text>
+<text x="156" y="1480" fill="#ece6d5" font-family="monospace" font-size="17" >Git · GitHub · Linux</text>
+<path d="M36 1510H844" fill="none" stroke="#3c4437" stroke-width="1" />
+<text x="36" y="1538" fill="#b5b6a3" font-family="monospace" font-size="13" >SYNC / 2026-10-26 02:27 UTC</text>
+<text x="844" y="1538" fill="#ffb35c" font-family="monospace" font-size="16" text-anchor="end">El Psy Kongroo.</text>
+</g></svg>

@@ -38,17 +38,19 @@ class CDP:
                 return msg.get("result", {})
 
 
-def cpu_seconds(group):
-    total = 0
+def cpu_seconds(group, samples):
+    # Retain observed counters for exited helpers: summing only live processes
+    # can otherwise produce negative CPU deltas when a Chromium child exits.
     for path in Path("/proc").glob("[0-9]*/stat"):
         try:
             # comm may contain spaces/parentheses; fields below start at field 3.
             fields = path.read_text().rsplit(")", 1)[1].split()
             if int(fields[2]) == group:
-                total += int(fields[11]) + int(fields[12])
+                key = (path.parent.name, fields[19])  # PID + start time
+                samples[key] = max(samples.get(key, 0), int(fields[11]) + int(fields[12]))
         except (OSError, ValueError, IndexError):
             continue
-    return total / os.sysconf("SC_CLK_TCK")
+    return sum(samples.values()) / os.sysconf("SC_CLK_TCK")
 
 
 async def measure(args, url, temp):
@@ -91,9 +93,12 @@ async def measure(args, url, temp):
                 await asyncio.sleep(args.warmup)
                 await cdp.call("Tracing.start", dict(categories="devtools.timeline,disabled-by-default-devtools.timeline",
                                                     transferMode="ReturnAsStream"))
-                start_cpu, start = cpu_seconds(browser.pid), time.monotonic()
-                await asyncio.sleep(args.seconds)
-                elapsed, cpu = time.monotonic() - start, cpu_seconds(browser.pid) - start_cpu
+                samples = {}
+                start_cpu, start = cpu_seconds(browser.pid, samples), time.monotonic()
+                while time.monotonic() - start < args.seconds:
+                    await asyncio.sleep(min(.2, max(0, args.seconds - (time.monotonic() - start))))
+                    cpu_seconds(browser.pid, samples)
+                elapsed, cpu = time.monotonic() - start, cpu_seconds(browser.pid, samples) - start_cpu
                 await cdp.call("Tracing.end")
                 while True:
                     event = json.loads(await asyncio.wait_for(socket.recv(), timeout=30))
@@ -143,12 +148,12 @@ def main():
     ap.add_argument("--seconds", type=float, default=15)
     ap.add_argument("--warmup", type=float, default=12)
     ap.add_argument("--theme", choices=("dark", "light"), default="dark")
-    ap.add_argument("--panel", choices=("all", "hero", "rest", "empty"), default="all")
+    ap.add_argument("--panel", choices=("all", "hero", "rest", "empty", "static"), default="static")
     ap.add_argument("--reduced-motion", action="store_true")
     ap.add_argument("--screenshot")
     args = ap.parse_args()
     panels = {"all": ["hero", "labfile", "worldlines", "feed", "footer"], "hero": ["hero"],
-              "rest": ["labfile", "worldlines", "feed", "footer"], "empty": []}[args.panel]
+              "rest": ["labfile", "worldlines", "feed", "footer"], "empty": [], "static": ["lab"]}[args.panel]
     background = "#0d1117" if args.theme == "dark" else "#ffffff"
     images = "".join(f'<p><img src="/assets/{p}-{args.theme}.svg" width="{600 if p == "footer" else 880}"></p>' for p in panels)
     page = f'<html><head><style>body{{margin:24px;background:{background};text-align:center}}img{{max-width:100%}}</style></head><body>{images}</body></html>'

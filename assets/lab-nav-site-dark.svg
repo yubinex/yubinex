@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="68" viewBox="0 0 270 68" role="img" aria-labelledby="title">
+<title id="title">ENTER THE LAB / PERSONAL WEBSITE</title>
+<rect x=".5" y=".5" width="269" height="67" rx="4" fill="#101312" stroke="#3c4437"/>
+<path d="M1 16V1H16" fill="none" stroke="#ffb35c"/>
+<text x="16" y="23" fill="#b5b6a3" font-family="monospace" font-size="10" letter-spacing="1">01 / PERSONAL WEBSITE</text>
+<text x="16" y="48" fill="#ece6d5" font-family="monospace" font-size="14" letter-spacing=".5">ENTER THE LAB</text>
+<path d="M239 43H251M245 37L251 43L245 49" fill="none" stroke="#ffb35c" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

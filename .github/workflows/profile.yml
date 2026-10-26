@@ -1,108 +1,65 @@
-name: Profile panels
+name: Static lab dossier
 
 on:
-  schedule:
-    - cron: "29 5 * * *"
   workflow_dispatch:
-    inputs:
-      refresh_gif:
-        description: "Download the OP GIF again even if assets/op.gif exists"
-        type: boolean
-        default: false
+  schedule:
+    - cron: '29 5 * * *'
   push:
     paths:
+      - README.md
+      - .github/profile-data.json
+      - assets/lab-*.svg
+      - .github/workflows/profile.yml
+      - .github/scripts/**
+  pull_request:
+    paths:
+      - README.md
+      - .github/profile-data.json
+      - assets/lab-*.svg
       - .github/workflows/profile.yml
       - .github/scripts/**
 
 permissions:
-  contents: write
-
-concurrency:
-  group: profile-panels-${{ github.ref }}
-  cancel-in-progress: true
-
-env:
-  OP_GIF_URL: https://static2.klipy.com/ii/4e7bea9f7a3371424e6c16ebc93252fe/f5/c1/cRR6cCvRx1AjXxVfnbr2.gif
+  contents: read
 
 jobs:
-  build:
+  check:
+    if: github.event_name == 'push' || github.event_name == 'pull_request'
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Check static profile and payload budgets
+        run: python3 -m unittest discover -s .github/scripts -p 'test_static_profile.py'
 
-      # Hosted in the repo: GitHub's image proxy (camo) refuses external
-      # images over ~5 MB, and the original GIF is ~8 MB. Same-repo files skip
-      # camo. It is re-encoded to 400px / 12.5 fps (~2 MB) so the page loads fast.
-      - name: Fetch and optimise OP GIF
-        env:
-          REFRESH: ${{ inputs.refresh_gif }}
-        run: |
-          if [ -f assets/op.gif ] && [ "$(stat -c %s assets/op.gif)" -lt 3000000 ] && [ "$REFRESH" != "true" ]; then
-            echo "assets/op.gif already optimised ($(stat -c %s assets/op.gif) bytes)"; exit 0
-          fi
-          curl -fsSL --retry 3 --max-filesize 50000000 -o /tmp/src.gif "$OP_GIF_URL"
-          magic=$(head -c 6 /tmp/src.gif)
-          echo "source magic=$magic size=$(stat -c %s /tmp/src.gif)"
-          if [ "$magic" != "GIF89a" ] && [ "$magic" != "GIF87a" ]; then
-            echo "::error::Downloaded file is not a GIF"; exit 1
-          fi
-          command -v ffmpeg >/dev/null && command -v gifsicle >/dev/null || {
-            sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg gifsicle >/dev/null; }
-          ffmpeg -v error -y -i /tmp/src.gif -vf "fps=12.5,scale=400:-1:flags=lanczos,split[a][b];[a]palettegen=max_colors=32:stats_mode=full[p];[b][p]paletteuse=dither=none:diff_mode=rectangle" /tmp/mid.gif
-          gifsicle -O3 --lossy=80 /tmp/mid.gif -o /tmp/op.gif
-          size=$(stat -c %s /tmp/op.gif)
-          echo "optimised size=$size"
-          if [ "$(head -c 6 /tmp/op.gif)" != "GIF89a" ] || [ "$size" -lt 10000 ]; then
-            echo "::error::Optimised GIF looks wrong"; exit 1
-          fi
-          mkdir -p assets
-          mv /tmp/op.gif assets/op.gif
-
-      - name: Install build-time SVG renderer
-        run: |
-          command -v rsvg-convert >/dev/null || {
-            sudo apt-get update -qq
-            sudo apt-get install -y -qq librsvg2-bin
-          }
-
-      - name: Generate panels
+  refresh:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    concurrency:
+      group: lab-dossier-${{ github.ref }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Refresh public snapshot and generate static dossier
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SG_TZ: Europe/Berlin
+        run: python3 .github/scripts/static_profile.py --refresh
+      - name: Check artwork and transcript
+        run: python3 -m unittest discover -s .github/scripts -p 'test_static_profile.py'
+      - name: Save refreshed dossier
         run: |
-          python3 .github/scripts/sg_graph.py --style labfile --user yubinex --save-data /tmp/gh.json \
-            --out-dark assets/labfile-dark.svg --out-light assets/labfile-light.svg
-          for style in worldlines feed footer; do
-            python3 .github/scripts/sg_graph.py --style "$style" --user yubinex --data /tmp/gh.json \
-              --out-dark "assets/$style-dark.svg" --out-light "assets/$style-light.svg"
-          done
-          # Hero row as ONE svg: divergence meter + glitch title (left), observation
-          # monitor with the OP GIF embedded (right). Parts are built in /tmp, then merged.
-          python3 .github/scripts/divergence.py .github/scripts/divergence-src.svg /tmp/meter.svg
-          python3 .github/scripts/sg_graph.py --style title --user yubinex --data /tmp/gh.json \
-            --out-dark /tmp/title-dark.svg --out-light /tmp/title-light.svg
-          python3 .github/scripts/sg_graph.py --style monitor --gif assets/op.gif \
-            --out-dark /tmp/monitor-dark.svg --out-light /tmp/monitor-light.svg
-          for v in dark light; do
-            python3 .github/scripts/sg_hero.py --meter /tmp/meter.svg --title "/tmp/title-$v.svg" \
-              --monitor "/tmp/monitor-$v.svg" --theme "$v" --out "assets/hero-$v.svg"
-          done
-
-      - name: Version README panel URLs
-        run: python3 .github/scripts/version_panels.py
-
-      - name: Check profile regressions
-        run: python3 -m unittest discover -s .github/scripts -p 'test_*.py'
-
-      - name: Commit if changed
-        run: |
-          git add assets/ README.md
-          if git diff --cached --quiet; then
-            echo "No change to commit."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update profile panels"
+          git add README.md assets/lab-*.svg .github/profile-data.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Refresh static lab dossier'
           git push

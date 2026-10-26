@@ -1,4 +1,102 @@
-# Profile rendering experiment
+# Static profile redesign (2026-10-26)
+
+The current README replaces the animated dashboard with one static, theme-aware
+SVG lab dossier containing the member file, a data-driven contribution world-line
+diagram, three current projects, and a lab equipment inventory. Both theme assets
+are about **20.2 KB each**; the browser selects one. Three theme-aware navigation
+controls add about **2.1 KB combined** for the selected theme. The previously displayed dark-theme panels totalled about
+2.9 MiB. Legacy assets and generators remain in the repository for reference but
+are not loaded by the README.
+
+The dossier uses plain text, rectangles, circles, and a small number of paths.
+There are no animations, GIFs, embedded raster images, SVG filters, scripts,
+remote fonts, or third-party image services. Its divergence number is decorative,
+not a live statistic. Activity numbers and projects come from a checked-in public
+GitHub snapshot. An expandable Markdown transcript includes the same content,
+complete project descriptions, and clickable project links; it also offers a
+readable alternative to scaling the artwork on small screens.
+
+Footer links use small static SVG controls with the dossier's palette, borders,
+monospace labels, and amber registration marks. Links remain native HTML anchors;
+there is no script-based interaction. The expandable transcript uses a monospace
+disclosure label, terminal-record data blocks, and clickable project names.
+
+The equipment section replaces the repetitive activity inbox. Its language counts
+use the primary language of public, non-fork repositories (not proficiency or code
+volume). The tools/environment list is maintained explicitly in `static_profile.py`.
+
+Section 02 is an inset instrument plate driven by the actual contribution calendar.
+Each active week is a curved world-line branch: its endpoint height encodes weekly
+contributions on a shared linear scale. Branches converge into monthly bundles,
+grouped by week start; months and scale ticks make the diagram readable. Zero
+weeks have zero height, and the peak week is highlighted. The transcript includes
+the corresponding month-bundle totals. These are GitHub contributions, not
+commit-only counts. The anime informs the branching visual language, not a
+decorative diagram copied from the show. Everything is static and filter-free.
+
+The workflow checks static artwork on pushes and pull requests, and refreshes
+the public snapshot and static files daily or on manual dispatch. It never
+downloads GIFs or regenerates the old animated panels. Normal generation is
+offline and reproducible. Image paths are relative, so previews
+follow the current branch and still work after merging or deleting that branch.
+
+## Verification
+
+Both themes were rendered and visually inspected. Twelve local regression tests
+pass, including eight static tests enforcing reproducible artwork and transcript,
+a 24 KB per-theme budget, fewer than 240 SVG elements, escaping and empty-data
+handling, and no runtime animation or external assets.
+The inventory test also excludes private repositories and forks from counts.
+Diagram tests verify weekly totals, proportional heights, monthly convergence,
+zero weeks, the peak-week path, data-dependent rendering, and the payload budget
+for a fully active year.
+Footer tests also check reproducibility, destination links, theme variants, and
+a 1.8 KB budget per navigation control.
+CI runs the eight static tests with the Python standard library; the four legacy
+tests still require the old renderer dependencies.
+
+Isolated headless Chromium, 1000×1200 viewport, local HTTP assets, 3-second
+warmup, then 15 seconds of measurement (CPU across the browser process group):
+These measurements used the prior inbox layout, before the equipment, chart, and footer updates;
+the updated artwork has the same no-animation/no-filter constraints but was not
+rebenchmarked.
+
+| Artwork | Browser CPU seconds / 15s | Average one-core CPU |
+| --- | ---: | ---: |
+| Previous five panels, dark | 12.56 | 83.64% |
+| Static dossier, dark | 0.04 | 0.27% |
+| Static dossier, light | 0.02 | 0.13% |
+
+The harness now retains observed CPU counters for exited Chromium helper
+processes, avoiding negative deltas from summing only currently live processes.
+This measures artwork at rest, not the complete GitHub page, initial load time,
+or every browser/device. It does not guarantee that unrelated browser freezes
+are fixed. The historical results below use a different timing window.
+
+## Build and check
+
+```sh
+python3 .github/scripts/static_profile.py
+python3 -m unittest discover -s .github/scripts -p 'test_static_profile.py'
+```
+
+To fetch a new snapshot first, use `python3 .github/scripts/static_profile.py --refresh`.
+An optional `GITHUB_TOKEN` raises API rate limits; no credentials are saved.
+Edit layout in `static_profile.py`, not the generated README or SVGs.
+
+Optional benchmark (requires Chromium and Python `websockets`):
+
+```sh
+TMPDIR=/tmp/opencode python3 .github/scripts/profile_performance.py \
+  --panel static --warmup 3 --seconds 15 --out /tmp/opencode/static-profile.json
+```
+
+Use `--theme light` for the paper-colored version and `--panel all` for the legacy
+five-panel comparison. The default benchmark target is now `static`.
+
+---
+
+# Historical profile rendering experiment
 
 The measured rendering optimizations were developed on `perf/profile-performance`
 and merged into `master`. Intermittent freezes were still reported after testing;
