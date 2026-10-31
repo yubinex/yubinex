@@ -1,7 +1,7 @@
 {
   "user": "yubinex",
   "created": "2022 / 04",
-  "public_repos": 21,
+  "public_repos": 22,
   "followers": 9,
   "stars": 14,
   "cells": [
@@ -2592,15 +2592,28 @@
       "x": 52,
       "y": 5,
       "date": "2026-10-30",
+      "count": 12,
+      "level": 2
+    },
+    {
+      "x": 52,
+      "y": 6,
+      "date": "2026-10-31",
       "count": 0,
       "level": 0
     }
   ],
-  "total": 519,
-  "active_days": 79,
+  "total": 531,
+  "active_days": 80,
   "longest_streak": 11,
-  "current_streak": 0,
+  "current_streak": 1,
   "projects": [
+    {
+      "name": "omarchy-news",
+      "description": "Official Omarchy release notes in your desktop bar \u2014 see what changed before and after updating.",
+      "language": "QML",
+      "stars": 0
+    },
     {
       "name": "yubinex-web",
       "description": "My personal website, reimagined as a laboratory archive. Profile, projects, and interests\u2014one lab file at a time.",
@@ -2612,12 +2625,6 @@
       "description": "FIA World Endurance Championship race countdown and weekend schedule tray app for Windows.",
       "language": "Python",
       "stars": 0
-    },
-    {
-      "name": "omarchy-wec",
-      "description": "FIA World Endurance Championship race countdown and weekend schedule plugin for Omarchy.",
-      "language": "QML",
-      "stars": 1
     }
   ],
   "languages": [
@@ -2631,7 +2638,7 @@
     ],
     [
       "QML",
-      4
+      5
     ],
     [
       "HTML",
@@ -2646,5 +2653,5 @@
       1
     ]
   ],
-  "generated": "2026-10-30 11:32 UTC"
+  "generated": "2026-10-31 11:04 UTC"
 }

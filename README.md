@@ -47,7 +47,7 @@ DIVERGENCE    1.048596 / decorative meter
 
 ```text
 MEMBER SINCE  2022 / 04
-PUBLIC REPOS  21
+PUBLIC REPOS  22
 REPO STARS    14 / public, non-fork repositories
 FOLLOWERS     9
 ```
@@ -55,10 +55,10 @@ FOLLOWERS     9
 ### `02 / WORLD LINE OBSERVATION`
 
 ```text
-CONTRIBUTIONS 519 / calendar snapshot
-ACTIVE DAYS   79
+CONTRIBUTIONS 531 / calendar snapshot
+ACTIVE DAYS   80
 BEST STREAK   11 days
-NOW           0 days
+NOW           1 days
 PEAK WEEK     70 contributions
 ```
 Read left to right. Each branch is one week of real GitHub contributions, and its
@@ -82,15 +82,15 @@ can also include pull requests, issues, and other GitHub activity.
 | `2026-07` | `29` |
 | `2026-08` | `40` |
 | `2026-09` | `117` |
-| `2026-10` | `91` |
+| `2026-10` | `103` |
 
 ### `03 / CURRENT EXPERIMENTS`
 
 Most recently pushed public, non-fork projects (excluding profile repositories):
 
+- [`omarchy-news`](https://github.com/yubinex/omarchy-news) — Official Omarchy release notes in your desktop bar — see what changed before and after updating.
 - [`yubinex-web`](https://github.com/yubinex/yubinex-web) — My personal website, reimagined as a laboratory archive. Profile, projects, and interests—one lab file at a time.
 - [`windows-wec`](https://github.com/yubinex/windows-wec) — FIA World Endurance Championship race countdown and weekend schedule tray app for Windows.
-- [`omarchy-wec`](https://github.com/yubinex/omarchy-wec) — FIA World Endurance Championship race countdown and weekend schedule plugin for Omarchy.
 
 ### `04 / LAB EQUIPMENT`
 
@@ -100,7 +100,7 @@ Top languages by number of public, non-fork repositories using each as their pri
 LANGUAGE INVENTORY
 C                        5 public repos
 Python                   5 public repos
-QML                      4 public repos
+QML                      5 public repos
 HTML                     2 public repos
 Jupyter Notebook         2 public repos
 JavaScript               1 public repos
@@ -109,7 +109,7 @@ TOOLS / ENVIRONMENT
 Git · GitHub · Linux
 ```
 
-<samp>SYNC / 2026-10-30 11:32 UTC</samp>
+<samp>SYNC / 2026-10-31 11:04 UTC</samp>
 
 <samp>END OF RECORD / El Psy Kongroo.</samp>
 

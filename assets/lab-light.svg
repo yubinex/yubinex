@@ -55,16 +55,16 @@
 <text x="84" y="368" fill="#944309" font-family="monospace" font-size="18" letter-spacing="1">LAB MEMBER FILE</text>
 <path d="M36 386H844" fill="none" stroke="#c3bca5" stroke-width="1" />
 <text x="36" y="414" fill="#626650" font-family="monospace" font-size="15" >Public signals. One observer behind the experiments.</text>
-<text x="36" y="466" fill="#292e24" font-family="monospace" font-size="36" >21</text>
+<text x="36" y="466" fill="#292e24" font-family="monospace" font-size="36" >22</text>
 <text x="36" y="494" fill="#626650" font-family="monospace" font-size="14" >PUBLIC REPOS</text>
 <text x="246" y="466" fill="#292e24" font-family="monospace" font-size="36" >14</text>
 <text x="246" y="494" fill="#626650" font-family="monospace" font-size="14" >REPO STARS</text>
 <text x="456" y="466" fill="#292e24" font-family="monospace" font-size="36" >9</text>
 <text x="456" y="494" fill="#626650" font-family="monospace" font-size="14" >FOLLOWERS</text>
-<text x="666" y="466" fill="#292e24" font-family="monospace" font-size="36" >519</text>
+<text x="666" y="466" fill="#292e24" font-family="monospace" font-size="36" >531</text>
 <text x="666" y="494" fill="#626650" font-family="monospace" font-size="14" >CONTRIBUTIONS</text>
 <text x="36" y="534" fill="#292e24" font-family="monospace" font-size="16" >MEMBER SINCE / 2022 / 04</text>
-<text x="456" y="534" fill="#292e24" font-family="monospace" font-size="16" >STREAK / 11d best · 0d now</text>
+<text x="456" y="534" fill="#292e24" font-family="monospace" font-size="16" >STREAK / 11d best · 1d now</text>
 <rect x="36" y="571" width="34" height="30" fill="#944309" />
 <text x="53" y="592" fill="#f4efdf" font-family="monospace" font-size="16" text-anchor="middle" font-weight="700">02</text>
 <text x="84" y="594" fill="#944309" font-family="monospace" font-size="18" letter-spacing="1">WORLD LINE OBSERVATION</text>
@@ -83,7 +83,7 @@
 <path d="M84 723.0H822" fill="none" stroke="#c3bca5" stroke-width="0.8" stroke-dasharray="2 6"/>
 <text x="72" y="727.0" fill="#626650" font-family="monospace" font-size="12" text-anchor="end">80</text>
 <path d="M92 833H822" fill="none" stroke="#626650" stroke-width="0.8" opacity=".45"/>
-<path d="M312.38 833C312.38 829.29 291.72 826.81 291.72 824.75 M312.38 833C312.38 830.52 305.49 828.88 305.49 827.50 M374.36 833C374.36 829.91 346.81 827.84 346.81 826.12 M436.34 833C436.34 789.69 443.23 760.81 443.23 736.75 M436.34 833C436.34 790.92 457.00 762.88 457.00 739.50 M498.32 833C498.32 830.52 470.77 828.88 470.77 827.50 M498.32 833C498.32 820.62 484.55 812.38 484.55 805.50 M498.32 833C498.32 815.06 498.32 803.09 498.32 793.12 M498.32 833C498.32 825.58 512.09 820.62 512.09 816.50 M498.32 833C498.32 832.38 525.87 831.97 525.87 831.62 M560.30 833C560.30 831.14 539.64 829.91 539.64 828.88 M560.30 833C560.30 829.29 553.42 826.81 553.42 824.75 M560.30 833C560.30 825.58 567.19 820.62 567.19 816.50 M560.30 833C560.30 831.76 580.96 830.94 580.96 830.25 M615.40 833C615.40 832.38 594.74 831.97 594.74 831.62 M615.40 833C615.40 825.58 608.51 820.62 608.51 816.50 M615.40 833C615.40 825.58 622.28 820.62 622.28 816.50 M615.40 833C615.40 830.52 636.06 828.88 636.06 827.50 M677.38 833C677.38 808.25 704.92 791.75 704.92 778.00 M739.36 833C739.36 822.48 718.70 815.47 718.70 809.62 M739.36 833C739.36 820.62 732.47 812.38 732.47 805.50 M739.36 833C739.36 810.11 746.25 794.84 746.25 782.12 M739.36 833C739.36 806.39 760.02 788.66 760.02 773.88 M794.45 833C794.45 809.49 773.79 793.81 773.79 780.75 M794.45 833C794.45 829.29 787.57 826.81 787.57 824.75 M794.45 833C794.45 814.44 801.34 802.06 801.34 791.75 M794.45 833C794.45 822.48 815.11 815.47 815.11 809.62" fill="none" stroke="#944309" stroke-width="1.1" id="worldline-branches" opacity=".65"/>
+<path d="M312.38 833C312.38 829.29 291.72 826.81 291.72 824.75 M312.38 833C312.38 830.52 305.49 828.88 305.49 827.50 M374.36 833C374.36 829.91 346.81 827.84 346.81 826.12 M436.34 833C436.34 789.69 443.23 760.81 443.23 736.75 M436.34 833C436.34 790.92 457.00 762.88 457.00 739.50 M498.32 833C498.32 830.52 470.77 828.88 470.77 827.50 M498.32 833C498.32 820.62 484.55 812.38 484.55 805.50 M498.32 833C498.32 815.06 498.32 803.09 498.32 793.12 M498.32 833C498.32 825.58 512.09 820.62 512.09 816.50 M498.32 833C498.32 832.38 525.87 831.97 525.87 831.62 M560.30 833C560.30 831.14 539.64 829.91 539.64 828.88 M560.30 833C560.30 829.29 553.42 826.81 553.42 824.75 M560.30 833C560.30 825.58 567.19 820.62 567.19 816.50 M560.30 833C560.30 831.76 580.96 830.94 580.96 830.25 M615.40 833C615.40 832.38 594.74 831.97 594.74 831.62 M615.40 833C615.40 825.58 608.51 820.62 608.51 816.50 M615.40 833C615.40 825.58 622.28 820.62 622.28 816.50 M615.40 833C615.40 830.52 636.06 828.88 636.06 827.50 M677.38 833C677.38 808.25 704.92 791.75 704.92 778.00 M739.36 833C739.36 822.48 718.70 815.47 718.70 809.62 M739.36 833C739.36 820.62 732.47 812.38 732.47 805.50 M739.36 833C739.36 810.11 746.25 794.84 746.25 782.12 M739.36 833C739.36 806.39 760.02 788.66 760.02 773.88 M794.45 833C794.45 809.49 773.79 793.81 773.79 780.75 M794.45 833C794.45 829.29 787.57 826.81 787.57 824.75 M794.45 833C794.45 814.44 801.34 802.06 801.34 791.75 M794.45 833C794.45 815.06 815.11 803.09 815.11 793.12" fill="none" stroke="#944309" stroke-width="1.1" id="worldline-branches" opacity=".65"/>
 <circle cx="98.89" cy="833" r="2.5" fill="#f4efdf" stroke="#626650" stroke-width=".8"/>
 <circle cx="140.21" cy="833" r="2.5" fill="#f4efdf" stroke="#626650" stroke-width=".8"/>
 <text x="140.20754716981133" y="860" fill="#626650" font-family="monospace" font-size="12" text-anchor="middle">NOV</text>
@@ -109,13 +109,13 @@
 <text x="739.3584905660377" y="860" fill="#626650" font-family="monospace" font-size="12" text-anchor="middle">SEP</text>
 <circle cx="794.45" cy="833" r="2.5" fill="#f4efdf" stroke="#626650" stroke-width=".8"/>
 <text x="794.4528301886793" y="860" fill="#626650" font-family="monospace" font-size="12" text-anchor="middle">OCT</text>
-<path d="M293.52 824.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M307.29 827.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M348.61 826.12a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M445.03 736.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M458.80 739.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M472.57 827.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M486.35 805.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M500.12 793.12a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M513.89 816.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M527.67 831.62a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M541.44 828.88a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M555.22 824.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M568.99 816.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M582.76 830.25a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M596.54 831.62a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M610.31 816.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M624.08 816.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M637.86 827.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M706.72 778.00a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M720.50 809.62a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M734.27 805.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M748.05 782.12a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M761.82 773.88a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M775.59 780.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M789.37 824.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M803.14 791.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M816.91 809.62a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0" fill="none" stroke="#944309" stroke-width="0.8" id="weekly-endpoints"/>
+<path d="M293.52 824.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M307.29 827.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M348.61 826.12a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M445.03 736.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M458.80 739.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M472.57 827.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M486.35 805.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M500.12 793.12a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M513.89 816.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M527.67 831.62a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M541.44 828.88a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M555.22 824.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M568.99 816.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M582.76 830.25a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M596.54 831.62a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M610.31 816.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M624.08 816.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M637.86 827.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M706.72 778.00a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M720.50 809.62a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M734.27 805.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M748.05 782.12a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M761.82 773.88a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M775.59 780.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M789.37 824.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M803.14 791.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M816.91 793.12a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0" fill="none" stroke="#944309" stroke-width="0.8" id="weekly-endpoints"/>
 <path d="M436.34 833C436.34 789.69 443.23 760.81 443.23 736.75" fill="none" stroke="#944309" stroke-width="7" opacity=".06"/>
 <path d="M436.34 833C436.34 789.69 443.23 760.81 443.23 736.75" fill="none" stroke="#944309" stroke-width="1.9" id="peak-week"/>
 <circle cx="443.23" cy="736.75" r="4" fill="#f4efdf" stroke="#944309" stroke-width="1.2"/>
 <text x="453.22641509433964" y="728.75" fill="#944309" font-family="monospace" font-size="12" >70</text>
 </g>
-<text x="36" y="911" fill="#292e24" font-family="monospace" font-size="17" >ACTIVITY / 519 contributions · 79 active days</text>
+<text x="36" y="911" fill="#292e24" font-family="monospace" font-size="17" >ACTIVITY / 531 contributions · 80 active days</text>
 <text x="36" y="939" fill="#626650" font-family="monospace" font-size="15" >Each branch = one week · height = contributions · peak 70/week</text>
 <g transform="translate(0 80)">
 <rect x="36" y="886" width="34" height="30" fill="#944309" />
@@ -123,18 +123,18 @@
 <text x="84" y="909" fill="#944309" font-family="monospace" font-size="18" letter-spacing="1">CURRENT EXPERIMENTS</text>
 <path d="M36 927H844" fill="none" stroke="#c3bca5" stroke-width="1" />
 <text x="36" y="955" fill="#626650" font-family="monospace" font-size="15" >Most recently pushed public projects. Lab notebooks, not finished answers.</text>
-<text x="36" y="998" fill="#292e24" font-family="monospace" font-size="20" font-weight="700">yubinex-web</text>
-<text x="844" y="998" fill="#944309" font-family="monospace" font-size="14" text-anchor="end">JavaScript</text>
-<text x="36" y="1025" fill="#626650" font-family="monospace" font-size="16" >My personal website, reimagined as a laboratory archive. Profile, projects,</text>
-<text x="36" y="1046" fill="#626650" font-family="monospace" font-size="16" >and interests—one lab file at a time.</text>
-<text x="36" y="1086" fill="#292e24" font-family="monospace" font-size="20" font-weight="700">windows-wec</text>
-<text x="844" y="1086" fill="#944309" font-family="monospace" font-size="14" text-anchor="end">Python</text>
-<text x="36" y="1113" fill="#626650" font-family="monospace" font-size="16" >FIA World Endurance Championship race countdown and weekend schedule tray app</text>
-<text x="36" y="1134" fill="#626650" font-family="monospace" font-size="16" >for Windows.</text>
-<text x="36" y="1174" fill="#292e24" font-family="monospace" font-size="20" font-weight="700">omarchy-wec</text>
-<text x="844" y="1174" fill="#944309" font-family="monospace" font-size="14" text-anchor="end">QML</text>
-<text x="36" y="1201" fill="#626650" font-family="monospace" font-size="16" >FIA World Endurance Championship race countdown and weekend schedule plugin</text>
-<text x="36" y="1222" fill="#626650" font-family="monospace" font-size="16" >for Omarchy.</text>
+<text x="36" y="998" fill="#292e24" font-family="monospace" font-size="20" font-weight="700">omarchy-news</text>
+<text x="844" y="998" fill="#944309" font-family="monospace" font-size="14" text-anchor="end">QML</text>
+<text x="36" y="1025" fill="#626650" font-family="monospace" font-size="16" >Official Omarchy release notes in your desktop bar — see what changed before</text>
+<text x="36" y="1046" fill="#626650" font-family="monospace" font-size="16" >and after updating.</text>
+<text x="36" y="1086" fill="#292e24" font-family="monospace" font-size="20" font-weight="700">yubinex-web</text>
+<text x="844" y="1086" fill="#944309" font-family="monospace" font-size="14" text-anchor="end">JavaScript</text>
+<text x="36" y="1113" fill="#626650" font-family="monospace" font-size="16" >My personal website, reimagined as a laboratory archive. Profile, projects,</text>
+<text x="36" y="1134" fill="#626650" font-family="monospace" font-size="16" >and interests—one lab file at a time.</text>
+<text x="36" y="1174" fill="#292e24" font-family="monospace" font-size="20" font-weight="700">windows-wec</text>
+<text x="844" y="1174" fill="#944309" font-family="monospace" font-size="14" text-anchor="end">Python</text>
+<text x="36" y="1201" fill="#626650" font-family="monospace" font-size="16" >FIA World Endurance Championship race countdown and weekend schedule tray app</text>
+<text x="36" y="1222" fill="#626650" font-family="monospace" font-size="16" >for Windows.</text>
 <rect x="36" y="1277" width="34" height="30" fill="#944309" />
 <text x="53" y="1298" fill="#f4efdf" font-family="monospace" font-size="16" text-anchor="middle" font-weight="700">04</text>
 <text x="84" y="1300" fill="#944309" font-family="monospace" font-size="18" letter-spacing="1">LAB EQUIPMENT</text>
@@ -148,7 +148,7 @@
 <text x="836" y="1380" fill="#626650" font-family="monospace" font-size="14" text-anchor="end">5 repos</text>
 <text x="36" y="1410" fill="#944309" font-family="monospace" font-size="17" >&gt;</text>
 <text x="60" y="1410" fill="#292e24" font-family="monospace" font-size="17" >QML</text>
-<text x="416" y="1410" fill="#626650" font-family="monospace" font-size="14" text-anchor="end">4 repos</text>
+<text x="416" y="1410" fill="#626650" font-family="monospace" font-size="14" text-anchor="end">5 repos</text>
 <text x="456" y="1410" fill="#944309" font-family="monospace" font-size="17" >&gt;</text>
 <text x="480" y="1410" fill="#292e24" font-family="monospace" font-size="17" >HTML</text>
 <text x="836" y="1410" fill="#626650" font-family="monospace" font-size="14" text-anchor="end">2 repos</text>
@@ -161,6 +161,6 @@
 <text x="36" y="1480" fill="#944309" font-family="monospace" font-size="15" >TOOLS /</text>
 <text x="156" y="1480" fill="#292e24" font-family="monospace" font-size="17" >Git · GitHub · Linux</text>
 <path d="M36 1510H844" fill="none" stroke="#c3bca5" stroke-width="1" />
-<text x="36" y="1538" fill="#626650" font-family="monospace" font-size="13" >SYNC / 2026-10-30 11:32 UTC</text>
+<text x="36" y="1538" fill="#626650" font-family="monospace" font-size="13" >SYNC / 2026-10-31 11:04 UTC</text>
 <text x="844" y="1538" fill="#944309" font-family="monospace" font-size="16" text-anchor="end">El Psy Kongroo.</text>
 </g></svg>
