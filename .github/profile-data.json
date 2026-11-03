@@ -1,7 +1,7 @@
 {
   "user": "yubinex",
   "created": "2022 / 04",
-  "public_repos": 22,
+  "public_repos": 23,
   "followers": 9,
   "stars": 15,
   "cells": [
@@ -2564,15 +2564,28 @@
       "x": 52,
       "y": 1,
       "date": "2026-11-02",
-      "count": 3,
+      "count": 9,
+      "level": 2
+    },
+    {
+      "x": 52,
+      "y": 2,
+      "date": "2026-11-03",
+      "count": 7,
       "level": 1
     }
   ],
-  "total": 535,
-  "active_days": 82,
+  "total": 548,
+  "active_days": 83,
   "longest_streak": 11,
-  "current_streak": 1,
+  "current_streak": 2,
   "projects": [
+    {
+      "name": "snippetbox",
+      "description": "A snippet-sharing web application built while following Let's Go by Alex Edwards.",
+      "language": "Go",
+      "stars": 0
+    },
     {
       "name": "omarchy-news",
       "description": "Official Omarchy release notes in your desktop bar \u2014 see what changed before and after updating.",
@@ -2583,12 +2596,6 @@
       "name": "yubinex-web",
       "description": "My personal website, reimagined as a laboratory archive. Profile, projects, and interests\u2014one lab file at a time.",
       "language": "JavaScript",
-      "stars": 0
-    },
-    {
-      "name": "windows-wec",
-      "description": "FIA World Endurance Championship race countdown and weekend schedule tray app for Windows.",
-      "language": "Python",
       "stars": 0
     }
   ],
@@ -2614,9 +2621,9 @@
       2
     ],
     [
-      "JavaScript",
+      "Go",
       1
     ]
   ],
-  "generated": "2026-11-02 13:45 UTC"
+  "generated": "2026-11-03 12:56 UTC"
 }

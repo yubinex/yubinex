@@ -47,7 +47,7 @@ DIVERGENCE    1.048596 / decorative meter
 
 ```text
 MEMBER SINCE  2022 / 04
-PUBLIC REPOS  22
+PUBLIC REPOS  23
 REPO STARS    15 / public, non-fork repositories
 FOLLOWERS     9
 ```
@@ -55,10 +55,10 @@ FOLLOWERS     9
 ### `02 / WORLD LINE OBSERVATION`
 
 ```text
-CONTRIBUTIONS 535 / calendar snapshot
-ACTIVE DAYS   82
+CONTRIBUTIONS 548 / calendar snapshot
+ACTIVE DAYS   83
 BEST STREAK   11 days
-NOW           1 days
+NOW           2 days
 PEAK WEEK     70 contributions
 ```
 Read left to right. Each branch is one week of real GitHub contributions, and its
@@ -82,15 +82,15 @@ can also include pull requests, issues, and other GitHub activity.
 | `2026-08` | `40` |
 | `2026-09` | `117` |
 | `2026-10` | `104` |
-| `2026-11` | `3` |
+| `2026-11` | `16` |
 
 ### `03 / CURRENT EXPERIMENTS`
 
 Most recently pushed public, non-fork projects (excluding profile repositories):
 
+- [`snippetbox`](https://github.com/yubinex/snippetbox) — A snippet-sharing web application built while following Let&#x27;s Go by Alex Edwards.
 - [`omarchy-news`](https://github.com/yubinex/omarchy-news) — Official Omarchy release notes in your desktop bar — see what changed before and after updating.
 - [`yubinex-web`](https://github.com/yubinex/yubinex-web) — My personal website, reimagined as a laboratory archive. Profile, projects, and interests—one lab file at a time.
-- [`windows-wec`](https://github.com/yubinex/windows-wec) — FIA World Endurance Championship race countdown and weekend schedule tray app for Windows.
 
 ### `04 / LAB EQUIPMENT`
 
@@ -103,13 +103,13 @@ Python                   5 public repos
 QML                      5 public repos
 HTML                     2 public repos
 Jupyter Notebook         2 public repos
-JavaScript               1 public repos
+Go                       1 public repos
 
 TOOLS / ENVIRONMENT
 Git · GitHub · Linux
 ```
 
-<samp>SYNC / 2026-11-02 13:45 UTC</samp>
+<samp>SYNC / 2026-11-03 12:56 UTC</samp>
 
 <samp>END OF RECORD / El Psy Kongroo.</samp>
 
