@@ -64,7 +64,7 @@
 <text x="666" y="466" fill="#ece6d5" font-family="monospace" font-size="36" >556</text>
 <text x="666" y="494" fill="#b5b6a3" font-family="monospace" font-size="14" >CONTRIBUTIONS</text>
 <text x="36" y="534" fill="#ece6d5" font-family="monospace" font-size="16" >MEMBER SINCE / 2022 / 04</text>
-<text x="456" y="534" fill="#ece6d5" font-family="monospace" font-size="16" >STREAK / 11d best · 5d now</text>
+<text x="456" y="534" fill="#ece6d5" font-family="monospace" font-size="16" >STREAK / 11d best · 0d now</text>
 <rect x="36" y="571" width="34" height="30" fill="#ffb35c" />
 <text x="53" y="592" fill="#101312" font-family="monospace" font-size="16" text-anchor="middle" font-weight="700">02</text>
 <text x="84" y="594" fill="#ffb35c" font-family="monospace" font-size="18" letter-spacing="1">WORLD LINE OBSERVATION</text>
@@ -83,37 +83,37 @@
 <path d="M84 723.0H822" fill="none" stroke="#3c4437" stroke-width="0.8" stroke-dasharray="2 6"/>
 <text x="72" y="727.0" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="end">80</text>
 <path d="M92 833H822" fill="none" stroke="#b5b6a3" stroke-width="0.8" opacity=".45"/>
-<path d="M298.60 833C298.60 829.29 277.94 826.81 277.94 824.75 M298.60 833C298.60 830.52 291.72 828.88 291.72 827.50 M360.58 833C360.58 829.91 333.04 827.84 333.04 826.12 M422.57 833C422.57 789.69 429.45 760.81 429.45 736.75 M422.57 833C422.57 790.92 443.23 762.88 443.23 739.50 M484.55 833C484.55 830.52 457.00 828.88 457.00 827.50 M484.55 833C484.55 820.62 470.77 812.38 470.77 805.50 M484.55 833C484.55 815.06 484.55 803.09 484.55 793.12 M484.55 833C484.55 825.58 498.32 820.62 498.32 816.50 M484.55 833C484.55 832.38 512.09 831.97 512.09 831.62 M546.53 833C546.53 831.14 525.87 829.91 525.87 828.88 M546.53 833C546.53 829.29 539.64 826.81 539.64 824.75 M546.53 833C546.53 825.58 553.42 820.62 553.42 816.50 M546.53 833C546.53 831.76 567.19 830.94 567.19 830.25 M601.62 833C601.62 832.38 580.96 831.97 580.96 831.62 M601.62 833C601.62 825.58 594.74 820.62 594.74 816.50 M601.62 833C601.62 825.58 608.51 820.62 608.51 816.50 M601.62 833C601.62 830.52 622.28 828.88 622.28 827.50 M663.60 833C663.60 808.25 691.15 791.75 691.15 778.00 M725.58 833C725.58 822.48 704.92 815.47 704.92 809.62 M725.58 833C725.58 820.62 718.70 812.38 718.70 805.50 M725.58 833C725.58 810.11 732.47 794.84 732.47 782.12 M725.58 833C725.58 806.39 746.25 788.66 746.25 773.88 M780.68 833C780.68 811.34 760.02 796.91 760.02 784.88 M780.68 833C780.68 830.52 773.79 828.88 773.79 827.50 M780.68 833C780.68 814.44 787.57 802.06 787.57 791.75 M780.68 833C780.68 814.44 801.34 802.06 801.34 791.75 M815.11 833C815.11 815.06 815.11 803.09 815.11 793.12" fill="none" stroke="#ffb35c" stroke-width="1.1" id="worldline-branches" opacity=".65"/>
-<circle cx="126.43" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
-<circle cx="188.42" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
-<text x="188.41509433962264" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">DEC</text>
-<circle cx="243.51" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
-<text x="243.50943396226415" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">JAN</text>
-<circle cx="298.60" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
-<text x="298.60377358490564" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">FEB</text>
-<circle cx="360.58" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
-<text x="360.58490566037733" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">MAR</text>
-<circle cx="422.57" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
-<text x="422.5660377358491" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">APR</text>
-<circle cx="484.55" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
-<text x="484.54716981132077" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">MAY</text>
-<circle cx="546.53" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
-<text x="546.5283018867925" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">JUN</text>
-<circle cx="601.62" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
-<text x="601.622641509434" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">JUL</text>
-<circle cx="663.60" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
-<text x="663.6037735849056" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">AUG</text>
-<circle cx="725.58" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
-<text x="725.5849056603773" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">SEP</text>
-<circle cx="780.68" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
-<text x="780.6792452830189" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">OCT</text>
-<circle cx="815.11" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
-<text x="815.1132075471698" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">NOV</text>
-<path d="M279.74 824.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M293.52 827.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M334.84 826.12a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M431.25 736.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M445.03 739.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M458.80 827.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M472.57 805.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M486.35 793.12a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M500.12 816.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M513.89 831.62a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M527.67 828.88a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M541.44 824.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M555.22 816.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M568.99 830.25a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M582.76 831.62a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M596.54 816.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M610.31 816.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M624.08 827.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M692.95 778.00a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M706.72 809.62a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M720.50 805.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M734.27 782.12a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M748.05 773.88a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M761.82 784.88a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M775.59 827.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M789.37 791.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M803.14 791.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M816.91 793.12a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0" fill="none" stroke="#ffb35c" stroke-width="0.8" id="weekly-endpoints"/>
-<path d="M422.57 833C422.57 789.69 429.45 760.81 429.45 736.75" fill="none" stroke="#ffb35c" stroke-width="7" opacity=".06"/>
-<path d="M422.57 833C422.57 789.69 429.45 760.81 429.45 736.75" fill="none" stroke="#ffb35c" stroke-width="1.9" id="peak-week"/>
-<circle cx="429.45" cy="736.75" r="4" fill="#101312" stroke="#ffb35c" stroke-width="1.2"/>
-<text x="439.45283018867923" y="728.75" fill="#ffb35c" font-family="monospace" font-size="12" >70</text>
+<path d="M284.83 833C284.83 829.29 264.17 826.81 264.17 824.75 M284.83 833C284.83 830.52 277.94 828.88 277.94 827.50 M346.81 833C346.81 829.91 319.26 827.84 319.26 826.12 M408.79 833C408.79 789.69 415.68 760.81 415.68 736.75 M408.79 833C408.79 790.92 429.45 762.88 429.45 739.50 M470.77 833C470.77 830.52 443.23 828.88 443.23 827.50 M470.77 833C470.77 820.62 457.00 812.38 457.00 805.50 M470.77 833C470.77 815.06 470.77 803.09 470.77 793.12 M470.77 833C470.77 825.58 484.55 820.62 484.55 816.50 M470.77 833C470.77 832.38 498.32 831.97 498.32 831.62 M532.75 833C532.75 831.14 512.09 829.91 512.09 828.88 M532.75 833C532.75 829.29 525.87 826.81 525.87 824.75 M532.75 833C532.75 825.58 539.64 820.62 539.64 816.50 M532.75 833C532.75 831.76 553.42 830.94 553.42 830.25 M587.85 833C587.85 832.38 567.19 831.97 567.19 831.62 M587.85 833C587.85 825.58 580.96 820.62 580.96 816.50 M587.85 833C587.85 825.58 594.74 820.62 594.74 816.50 M587.85 833C587.85 830.52 608.51 828.88 608.51 827.50 M649.83 833C649.83 808.25 677.38 791.75 677.38 778.00 M711.81 833C711.81 822.48 691.15 815.47 691.15 809.62 M711.81 833C711.81 820.62 704.92 812.38 704.92 805.50 M711.81 833C711.81 810.11 718.70 794.84 718.70 782.12 M711.81 833C711.81 806.39 732.47 788.66 732.47 773.88 M766.91 833C766.91 811.34 746.25 796.91 746.25 784.88 M766.91 833C766.91 830.52 760.02 828.88 760.02 827.50 M766.91 833C766.91 814.44 773.79 802.06 773.79 791.75 M766.91 833C766.91 814.44 787.57 802.06 787.57 791.75 M808.23 833C808.23 815.06 801.34 803.09 801.34 793.12" fill="none" stroke="#ffb35c" stroke-width="1.1" id="worldline-branches" opacity=".65"/>
+<circle cx="119.55" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<circle cx="174.64" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="174.64150943396226" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">DEC</text>
+<circle cx="229.74" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="229.73584905660377" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">JAN</text>
+<circle cx="284.83" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="284.8301886792453" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">FEB</text>
+<circle cx="346.81" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="346.811320754717" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">MAR</text>
+<circle cx="408.79" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="408.79245283018867" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">APR</text>
+<circle cx="470.77" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="470.7735849056604" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">MAY</text>
+<circle cx="532.75" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="532.7547169811321" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">JUN</text>
+<circle cx="587.85" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="587.8490566037735" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">JUL</text>
+<circle cx="649.83" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="649.8301886792453" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">AUG</text>
+<circle cx="711.81" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="711.811320754717" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">SEP</text>
+<circle cx="766.91" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="766.9056603773585" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">OCT</text>
+<circle cx="808.23" cy="833" r="2.5" fill="#101312" stroke="#b5b6a3" stroke-width=".8"/>
+<text x="808.2264150943397" y="860" fill="#b5b6a3" font-family="monospace" font-size="12" text-anchor="middle">NOV</text>
+<path d="M265.97 824.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M279.74 827.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M321.06 826.12a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M417.48 736.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M431.25 739.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M445.03 827.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M458.80 805.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M472.57 793.12a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M486.35 816.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M500.12 831.62a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M513.89 828.88a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M527.67 824.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M541.44 816.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M555.22 830.25a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M568.99 831.62a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M582.76 816.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M596.54 816.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M610.31 827.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M679.18 778.00a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M692.95 809.62a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M706.72 805.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M720.50 782.12a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M734.27 773.88a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M748.05 784.88a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M761.82 827.50a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M775.59 791.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M789.37 791.75a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0 M803.14 793.12a1.8 1.8 0 1 0 -3.6 0a1.8 1.8 0 1 0 3.6 0" fill="none" stroke="#ffb35c" stroke-width="0.8" id="weekly-endpoints"/>
+<path d="M408.79 833C408.79 789.69 415.68 760.81 415.68 736.75" fill="none" stroke="#ffb35c" stroke-width="7" opacity=".06"/>
+<path d="M408.79 833C408.79 789.69 415.68 760.81 415.68 736.75" fill="none" stroke="#ffb35c" stroke-width="1.9" id="peak-week"/>
+<circle cx="415.68" cy="736.75" r="4" fill="#101312" stroke="#ffb35c" stroke-width="1.2"/>
+<text x="425.6792452830189" y="728.75" fill="#ffb35c" font-family="monospace" font-size="12" >70</text>
 </g>
 <text x="36" y="911" fill="#ece6d5" font-family="monospace" font-size="17" >ACTIVITY / 556 contributions · 84 active days</text>
 <text x="36" y="939" fill="#b5b6a3" font-family="monospace" font-size="15" >Each branch = one week · height = contributions · peak 70/week</text>
@@ -161,6 +161,6 @@
 <text x="36" y="1480" fill="#ffb35c" font-family="monospace" font-size="15" >TOOLS /</text>
 <text x="156" y="1480" fill="#ece6d5" font-family="monospace" font-size="17" >Git · GitHub · Linux</text>
 <path d="M36 1510H844" fill="none" stroke="#3c4437" stroke-width="1" />
-<text x="36" y="1538" fill="#b5b6a3" font-family="monospace" font-size="13" >SYNC / 2026-11-07 11:52 UTC</text>
+<text x="36" y="1538" fill="#b5b6a3" font-family="monospace" font-size="13" >SYNC / 2026-11-08 12:06 UTC</text>
 <text x="844" y="1538" fill="#ffb35c" font-family="monospace" font-size="16" text-anchor="end">El Psy Kongroo.</text>
 </g></svg>
